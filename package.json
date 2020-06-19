@@ -1,0 +1,35 @@
+{
+  "name": "contributors-index",
+  "version": "1.0.0",
+  "description": "A platform for indexing and listing GNOME Contributors, Speakers, Staff and Foundation.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "node-sass -w assets/scss/ -o assets/css/ --output-style compressed",
+    "compile-sass": "node-sass assets/scss/ -o assets/css/ --output-style compressed",
+    "minify-html": "run(){ html-minifier --collapse-whitespace --remove-comments --remove-tag-whitespace $1 -o $1; }; run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.gnome.org/Teams/Engagement/websites/contributors-index.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.gnome.org/Teams/Engagement/websites/contributors-index/issues"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "bootstrap": "^4.4.1",
+    "html-minifier": "^4.0.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.1",
+    "popper.js": "^1.16.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "keywords": [
+    "gnome",
+    "contributors",
+    "jekyll"
+  ],
+  "author": "GNOME Engagement",
+  "license": "SEE LICENSE IN LICENSE.txt"
+}

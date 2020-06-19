@@ -1,0 +1,80 @@
+# general options
+
+# name of the website
+name: GNOME Contributors
+
+# title of the website
+title: GNOME Contributors - All our current Contributors
+
+# short description of the website
+description: GNOME Contributors is an open platform were we share our past and current Contributors profiles, the projects they worked on and more. We also list Foundation Members, GNOME Events Speakers and Foundation Staff
+
+# tell about the gtk project in as less words as possible for seo.
+mini_description: An all in-one place to list our past and active Contributors for the GNOME Project
+
+# website keywords for seo
+keywords: gnome, contributors, jekyll
+
+author: The GNOME Engagement Team
+twitter_username: GNOME
+website_repo: https://gitlab.gnome.org/Teams/Engagement/websites/contributors-index
+
+# jekyll configuration options
+url: https://contributors.gnome.org
+encoding: utf-8
+
+# markdown converter
+markdown: kramdown
+kramdown: 
+  parse_block_html: true
+  input: GFM # github flavored markdown
+  auto_ids: true
+
+# code highlighter used by the website
+highlighter: rouge
+
+# plugins used by the website
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# exclude these files from production site
+exclude: 
+  - documents/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - LICENSE.txt
+  - '*.sh'
+
+# folder which contains all the collections
+collections_dir: collections
+
+collections:
+  docs:
+    output: true
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      type: docs
+    values:
+      layout: documentation
+      navbar_type: dark
+
+# website statistics
+
+# Fill in your Google Analytics gtag.js ID to track your website using gtag
+gtag: ""
+
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: ""
+
+# Google Tag Manager ID
+gtm: ""
