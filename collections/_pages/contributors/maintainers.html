@@ -1,13 +1,13 @@
 ---
 navbar_type: dark
-permalink: '/contributors/active'
+permalink: '/contributors/maintainers'
 
-page_main_heading: GNOME Contributors
-page_main_heading_description: Find out our current Contributors of the GNOME Project
+page_main_heading: GNOME Maintainers
+page_main_heading_description: Find out the about the people that drive GNOME Development
 
 contributors:
-  heading: Current Contributors
-  description: These are the current Contributors of GNOME. This list is updated manually.
+  heading: Current Maintainers
+  description: These are the current Maintainers of GNOME Projects
 ---
 
 {% include header.html %}
@@ -22,28 +22,27 @@ contributors:
         <span class="text-info lead">{{ page.page_main_heading_description }}</span>
       </div>
       <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-contributors.svg' | prepend: site.url }}" class="img-fluid" alt="Community Wallpaper" />
+        <img src="{{ '/assets/img/wall-maintainers.svg' | prepend: site.url }}" class="img-fluid" alt="Maintaers Wallpaper" />
       </div>
     </div>
   </div>
 </section>
 
-{% include sections/contributors.html %}
+{% include sections/maintainers.html %}
 
 <section class="py-4 bg-light" id="team">
   <div class="container">
     <div class="row text-center d-flex justify-content-center">
       <div class="col-md-10 col-lg-7">
         <h2 class="font-weight-light mb-3">{{ page.contributors.heading }}</h2>
-        <div class="alert alert-primary mb-0" role="alert">
-          <strong>Notice:</strong> This list is updated manually and may not contain the real list of current and active GNOME Contributors.
-        </div>
+        <span class="text-muted">{{ page.contributors.description }}</span>
       </div>
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
-      {% assign active_members = site.data.contributors | where:'active', true %}
-      {% for member in active_members  %}
-        {% include sections/member.html %}
+      {% for member in site.data.contributors  %}
+        {% if member.badges contains 'maintainer' %}
+          {% include sections/member.html %}
+        {% endif %}
       {% endfor %}
     </div>
   </div>

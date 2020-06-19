@@ -10,18 +10,23 @@
         <a href="{{ position.link }}" class="{{ position.class }}">{{ position.name }}</a>
         <ul class="list-unstyled list-inline text-small my-1">
             {% for entry in member.badges %}
-            {% assign badge = badges | where:"id", entry | first %}
-            <li class="list-inline-item">
-                <a href="{{ badge.link }}" class="{{ badge.class }}">{{ badge.name }}</a>
-            </li>
+                {% assign badge = badges | where:"id", entry | first %}
+                <li class="list-inline-item">
+                    <a href="{{ badge.link }}" class="{{ badge.class }}">
+                        {% if badge.icon %}
+                            <i class="{{ badge.icon }}"></i>
+                        {% endif %}
+                        {{ badge.name }}
+                    </a>
+                </li>
             {% endfor %}
         </ul>
         <ul class="list-unstyled list-inline text-small mt-1 mb-0">
             {% for entry in member.social %}
-            {% assign social = social_networks | where:"id", entry[0] | first %}
-            <li class="list-inline-item">
-                <a href="{{ entry[1] | prepend: social.base }}" class="text-muted text-primary"><i class="{{ social.icon }}"></i></a>
-            </li>
+                {% assign social = social_networks | where:"id", entry[0] | first %}
+                <li class="list-inline-item">
+                    <a href="{{ entry[1] | prepend: social.base }}" class="text-muted text-primary"><i class="{{ social.icon }}"></i></a>
+                </li>
             {% endfor %}
         </ul>
     </div>

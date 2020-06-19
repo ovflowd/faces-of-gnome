@@ -13,3 +13,4 @@ assets/css/
 .vscode
 _data/api_fetch/
 .idea
+.DS_Store

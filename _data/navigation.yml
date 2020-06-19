@@ -25,13 +25,13 @@ menu_links:
     header: false
     footer: true
     section: Contributors
-  - name: Current Maintainers
+  - name: Maintainers
     href: /contributors/maintainers
     header: true
     footer: true
     section: Contributors
   - name: Foundation Members
-    href: /foundation/members
+    href: /foundation
     header: true
     footer: true
     section: Foundation

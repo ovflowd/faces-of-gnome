@@ -3,30 +3,42 @@
     "id": "engagement-team",
     "name": "GNOME Engagement Team",
     "class": "small text-muted",
+    "icon": false,
     "link": "https://gitlab.gnome.org/Teams/Engagement"
   },
   {
     "id": "staff",
     "name": "GNOME Staff",
     "class": "small badge badge-primary",
+    "icon": false,
     "link": "https://www.gnome.org/foundation/staff/"
   },
   {
     "id": "contributor",
     "name": "Contributor",
     "class": "small badge badge-secondary",
+    "icon": false,
     "link": "https://gitlab.gnome.org"
   },
   {
     "id": "maintainer",
     "name": "Maintainer",
-    "class": "small badge badge-info",
+    "class": "small badge badge-danger",
+    "icon": false,
     "link": "https://gitlab.gnome.org"
   },
   {
     "id": "foundation",
     "name": "Foundation",
     "class": "small badge badge-success",
+    "icon": false,
     "link": "https://www.gnome.org/foundation/"
+  },
+  {
+    "id": "foundation-board",
+    "name": "Board of Directors",
+    "class": "small badge badge-success",
+    "icon": "fa fa-award",
+    "link": "https://www.gnome.org/foundation/governance"
   }
 ]

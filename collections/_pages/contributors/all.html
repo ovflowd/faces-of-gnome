@@ -22,29 +22,13 @@ contributors:
         <span class="text-info lead">{{ page.page_main_heading_description }}</span>
       </div>
       <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-community.svg' | prepend: site.url }}" class="img-fluid" alt="Community Wallpaper" />
+        <img src="{{ '/assets/img/wall-contributors.svg' | prepend: site.url }}" class="img-fluid" alt="Contributors Wallpaper" />
       </div>
     </div>
   </div>
 </section>
 
-<section class="py-5 bg-lighy">
-  <div class="container">
-    <div class="row flex-row-reverse">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <img src="{{ '/assets/img/gnome-contributor.jpg' | prepend: site.url }}" class="img-fluid w-100 shadow" alt="GNOME Contributors" />
-      </div>
-      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start {% cycle 'pr-lg-5', 'pl-lg-5' %} px-3">
-        <h6 class="text-secondary small font-weight-normal letter-spacing-custom">CONTRIBUTORS</h6>
-        <h1 class="font-weight-light mb-3">Who are the contributors of GNOME?</h1>
-        <span class="text-muted">
-          GNOME Contributors are the faces of GNOME, that make GNOME exist be possible.
-          They are our Developers, Translators, Documentors, Testers, Issue Reporters and the many others that help GNOME to grow and become a better ecosystem.
-        </span>
-      </div>
-    </div>
-  </div>
-</section>
+{% include sections/contributors.html %}
 
 <section class="py-4 bg-light" id="team">
   <div class="container">
@@ -56,7 +40,7 @@ contributors:
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
       {% for member in site.data.contributors %}
-        {% include member.html %}
+        {% include sections/member.html %}
       {% endfor %}
     </div>
   </div>
