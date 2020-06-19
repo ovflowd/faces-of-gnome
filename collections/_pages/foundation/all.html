@@ -40,7 +40,7 @@ foundation:
       </div>
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
-      {% for member in site.data.members  %}
+      {% for member in site.data.members %}
         {% if member.badges contains 'foundation' or member.badges contains 'foundation-board' %}
           {% include sections/member.html %}
         {% endif %}

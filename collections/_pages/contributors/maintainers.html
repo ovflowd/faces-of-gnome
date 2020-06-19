@@ -39,10 +39,9 @@ contributors:
       </div>
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
-      {% assign active_members = site.data.members | where:'active', true %}
-      {% for member_hash in active_members  %}
+      {% for member_hash in site.data.members %}
         {% assign member = member_hash[1] %}
-        {% if member.badges contains 'maintainer' %}
+        {% if member.active === true and member.badges contains 'maintainer' %}
           {% include sections/member.html %}
         {% endif %}
       {% endfor %}
