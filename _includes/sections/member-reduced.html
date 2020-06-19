@@ -1,4 +1,3 @@
-{% assign badges = site.data.badges %}
 {% assign social_networks = site.data.social_networks %}
 {% assign default_avatar = '/assets/img/avatar.png' | prepend: site.url %}
 
@@ -8,19 +7,6 @@
         <span><strong class="gnome-member-name">{{ member.name }}</strong></span>
         {% assign position = badges | where:"id", member.title | first %}
         <span class="small text-muted">{{ member.title }}</span>
-        <ul class="list-unstyled list-inline text-small my-1">
-            {% for entry in member.badges %}
-                {% assign badge = badges | where:"id", entry | first %}
-                <li class="list-inline-item">
-                    <a href="{{ badge.link }}" class="{{ badge.class }}">
-                        {{ badge.name }}
-                        {% if badge.icon %}
-                            <i class="{{ badge.icon }}"></i>
-                        {% endif %}
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
         <ul class="list-unstyled list-inline text-small mt-1 mb-0">
             {% for entry in member.social %}
                 {% assign social = social_networks | where:"id", entry[0] | first %}

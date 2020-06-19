@@ -15,12 +15,12 @@ menu_links_sections:
 #   section: if footer is set to 'true', specify the name of the section the link belongs. Make sure that the section exists
 #   external: if the link provided in href is an external link i.e it points to a link outside of the website, then set this to 'false', else don't add this attribute
 menu_links:
-  - name: All Contributors
+  - name: Everyone
     href: /
     header: true
     footer: true
     section: Contributors
-  - name: Current Contributors
+  - name: Current
     href: /contributors/active
     header: false
     footer: true
@@ -30,22 +30,22 @@ menu_links:
     header: true
     footer: true
     section: Contributors
-  - name: Foundation Members
+  - name: Members
     href: /foundation/members
     header: true
     footer: true
     section: Foundation
-  - name: Foundation Board
+  - name: Board of Directors
     href: /foundation/board
     header: false
     footer: true
     section: Foundation
-  - name: Current Staff
+  - name: Staff
     href: /foundation/staff
     header: true
     footer: true
     section: Foundation
-  - name: All Speakers
+  - name: Speakers
     href: /speakers
     header: true
     footer: true

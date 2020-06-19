@@ -2,9 +2,11 @@
   {
     "id": "gnome-events",
     "name": "GNOME Events",
+    "description": "GNOME Events is the GNOME Platform for all GNOME Conferences and Engagement Activities",
     "repository": "https://gitlab.gnome.org/Teams/Engagement/Events/gnome-indico-resources",
     "maintainers": [
-      "claudio-wunder"
+      "claudio-wunder",
+      "britt-yazel"
     ]
   }
 ]

@@ -1,12 +1,5 @@
 [
   {
-    "id": "engagement-team",
-    "name": "GNOME Engagement Team",
-    "class": "small text-muted",
-    "icon": false,
-    "link": "https://gitlab.gnome.org/Teams/Engagement"
-  },
-  {
     "id": "staff",
     "name": "Staff",
     "class": "small badge",
@@ -47,12 +40,5 @@
     "class": "small badge",
     "icon": "fas fa-comment",
     "link": "https://events.gnome.org"
-  },
-  {
-    "id": "join-us",
-    "name": "Become a GNOME Contributor",
-    "class": "small text-muted",
-    "icon": false,
-    "link": "https://wiki.gnome.org/Newcomers/"
   }
 ]

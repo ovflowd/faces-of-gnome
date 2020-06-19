@@ -7,7 +7,7 @@ page_main_heading_description: Find out the about the people that drive GNOME De
 
 contributors:
   heading: Current Maintainers
-  description: These are the current Maintainers of GNOME Projects
+  description: These are the individuals that currently lead the Development of GNOME Applications, GTK, and many more.
 ---
 
 {% include header.html %}
@@ -30,22 +30,37 @@ contributors:
 
 {% include sections/maintainers.html %}
 
-<section class="py-4 bg-light" id="team">
+<section class="pt-0 pb-5" id="our_maintainers">
   <div class="container">
     <div class="row text-center d-flex justify-content-center">
       <div class="col-md-10 col-lg-7">
-        <h2 class="font-weight-light mb-3">{{ page.contributors.heading }}</h2>
-        <span class="text-muted">{{ page.contributors.description }}</span>
+        <h2 class="font-weight-light mb-3">{{ page.page_main_heading }}</h2>
+        <span class="text-muted">{{ page.page_main_heading_description | markdownify }}</span>
       </div>
     </div>
-    <div class="row d-flex justify-content-center pt-5 mx-auto">
-      {% for member_hash in site.data.members %}
-        {% assign member = member_hash[1] %}
-        {% if member.active == true and member.badges contains 'maintainer' %}
-          {% include sections/member.html %}
-        {% endif %}
-      {% endfor %}
-    </div>
+  </div>
+</section>
+
+<section class="py-4 bg-light" id="team">
+  <div class="container">
+    {% assign projects = site.data.projects %}
+    {% for project in projects %}
+      <div class="row text-left d-flex justify-content-start">
+        <div class="col-md-10 col-lg-7">
+          <h6 class="text-primary small font-weight-normal letter-spacing-custom">MAINTAINERS OF</h6>
+          <h4 class="font-weight-light mb-1">{{ project.name }}</h4>
+          <small class="text-muted">{{ project.description }}</small>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center pt-5 mx-auto">
+        {% for member_hash in site.data.members %}
+          {% if member_hash[1].active == true and project.maintainers contains member_hash[0] %}
+            {% assign member = member_hash[1] %}
+            {% include sections/member-reduced.html %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
   </div>
 </section>
 
