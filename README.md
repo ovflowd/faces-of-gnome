@@ -65,10 +65,11 @@ Just create a new YAML file on `_data/members/` directory containing the followi
 | ------------- |:-------------------------------------------------:| -----------------------:| ------------------------------------------------------- |
 | name          | Your name                                         | John Smith              | string                                                  |
 | avatar        | Your Avatar Image                                 | https://imgur.com/image | string/boolean                                          |
-| title         | Your current position at the GNOME Project        | `engagement-team`       | string:entry from `badges.json`                         |
+| title         | Your current position at the GNOME Project        | Community Manager       | string                                                  |
 | badges        | All the badges/roles you held at GNOME/Foundation | `['engagement-team']`   | array:entries from `badges.json`                        |
 | active        | If you're a current/active GNOME Contributor      | `true`                  | boolean                                                 |
 | projects      | The Projects/Repositories you're working on       | `['gtk']`               | array:entries from `projects.json`                      |
+| conferences   | The Conferences you participated                  | `['guadec-2018']`       | array:entries from `events.json`                        |
 | social        | Social Networks that you have                     | `{'twitter': 'handle'}` | collection:key from `social_networks.json`;value:string |
 
 And then just add a new entry and commit the changes with a **Merge Request**. And it will be approved if it's correct.

@@ -9,6 +9,8 @@ badges:
 active: true
 projects:
   - some-project
+conferences:
+  - some-conference
 social:
   blog: https://my.site
   twitter: handle

@@ -52,7 +52,7 @@ contributors:
           <small class="text-muted">{{ project.description }}</small>
         </div>
       </div>
-      <div class="row d-flex justify-content-center pt-5 mx-auto">
+      <div class="row d-flex justify-content-start pt-5">
         {% for member_hash in site.data.members %}
           {% if member_hash[1].active == true and project.maintainers contains member_hash[0] %}
             {% assign member = member_hash[1] %}

@@ -9,6 +9,8 @@ badges:
 active: true
 projects:
   - gnome-events
+conferences:
+  - guadec-2018
 social:
   blog: https://wunder.codes
   twitter: ovflowd

@@ -3,11 +3,22 @@ navbar_type: dark
 permalink: '/foundation/staff'
 
 page_main_heading: GNOME Foundation Staff
-page_main_heading_description: Who are the employees of the GNOME Foundation?
+page_main_heading_description: The hidden faces behind GNOME.
 
 foundation:
   heading: Current GNOME Staff
   description: These are the current employees of the GNOME Foundation
+
+staff_roles_heading: The roles of the Staff
+staff_roles_list:
+  - title: Infrastructure Managers
+    description: Ensures everything related to infrastructure works as smoothly as possible, focusing on monitoring and continuous integration systems.
+  - title: Program Managers
+    description: Manage conferences, internships and any other activities that are held by the GNOME Foundation, like the GNOME Community Challenge.
+  - title: Brand Managers
+    description: Ensure the Design and Marketing Assets standards are high. Manages the branding and design of the GNOME brand.
+  - title: Operation Managers
+    description: Ensure the operations through the GNOME Foundation are fulfilled and act as a history-keeper of the GNOME Project.
 ---
 
 {% include header.html %}
@@ -29,6 +40,22 @@ foundation:
 </section>
 
 {% include sections/foundation-staff.html %}
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center font-weight-light mb-3">{{ page.staff_roles_heading }}</h2>
+    <div class="row py-4">
+      {% for role in page.staff_roles_list %}
+        <div class="col-md-3 px-3 pb-4 pb-md-0">
+          <div class="w-100 px-4 py-4 rounded shadow bg-light h-100 text-center">
+            <h5 class="font-weight-normal mb-0 pb-2">{{ role.title }}</h5>
+            <span class="text-muted small">{{ role.description | markdownify }}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 <section class="py-4 bg-light" id="team">
   <div class="container">

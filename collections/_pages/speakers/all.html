@@ -43,7 +43,7 @@ foundation:
       {% for member_hash in site.data.members  %}
         {% assign member = member_hash[1] %}
         {% if member.badges contains 'speaker' %}
-          {% include sections/member.html %}
+          {% include sections/member-speaker.html %}
         {% endif %}
       {% endfor %}
     </div>
