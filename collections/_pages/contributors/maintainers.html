@@ -41,7 +41,7 @@ contributors:
   </div>
 </section>
 
-<section class="py-4 bg-light" id="team">
+<section class="pt-5 bg-light" id="team">
   <div class="container">
     {% assign projects = site.data.projects %}
     {% for project in projects %}
@@ -52,7 +52,7 @@ contributors:
           <small class="text-muted">{{ project.description }}</small>
         </div>
       </div>
-      <div class="row d-flex justify-content-start pt-5">
+      <div class="row d-flex justify-content-start pt-4 pb-4">
         {% for member_hash in site.data.members %}
           {% if member_hash[1].active == true and project.maintainers contains member_hash[0] %}
             {% assign member = member_hash[1] %}

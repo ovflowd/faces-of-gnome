@@ -8,5 +8,14 @@
       "claudio-wunder",
       "britt-yazel"
     ]
+  },
+  {
+    "id": "gnome-contributors",
+    "name": "GNOME Contributors",
+    "description": "GNOME Contributors is the platform of the Faces of GNOME.",
+    "repository": "https://gitlab.gnome.org/Teams/Engagement/websites/contributors-index",
+    "maintainers": [
+      "claudio-wunder"
+    ]
   }
 ]
