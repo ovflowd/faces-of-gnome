@@ -41,7 +41,7 @@ foundation:
     <div class="row d-flex justify-content-center pt-5 mx-auto">
       {% for member_hash in site.data.members  %}
         {% assign member = member_hash[1] %}
-        {% if member.active === true and member.badges contains 'foundation-board' %}
+        {% if member.active == true and member.badges contains 'foundation-board' %}
           {% include sections/member.html %}
         {% endif %}
       {% endfor %}

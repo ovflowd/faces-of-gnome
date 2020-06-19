@@ -43,7 +43,7 @@ contributors:
     <div class="row d-flex justify-content-center pt-5 mx-auto">
       {% for member_hash in site.data.members %}
         {% assign member = member_hash[1] %}
-        {% if member.active === true %}
+        {% if member.active == true %}
           {% include sections/member.html %}
         {% endif %}
       {% endfor %}
