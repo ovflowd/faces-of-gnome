@@ -47,5 +47,12 @@
     "class": "small badge",
     "icon": "fas fa-comment",
     "link": "https://events.gnome.org"
+  },
+  {
+    "id": "join-us",
+    "name": "Become a GNOME Contributor",
+    "class": "small text-muted",
+    "icon": false,
+    "link": "https://wiki.gnome.org/Newcomers/"
   }
 ]

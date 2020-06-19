@@ -1,15 +1,21 @@
 ﻿[
   {
-    "name": "Claudio Wunder",
+    "name": "A GNOME Contributor",
     "avatar": false,
+    "title": "join-us",
+    "badges": [],
+    "active": false,
+    "projects": [],
+    "social": {}
+  },
+  {
+    "name": "Claudio Wunder",
+    "avatar": "https://gitlab.gnome.org/uploads/-/system/user/avatar/2375/avatar.png?width=90",
     "title": "engagement-team",
     "badges": [
-      "staff",
       "contributor",
       "foundation",
-      "speaker",
-      "maintainer",
-      "foundation-board"
+      "speaker"
     ],
     "active": true,
     "projects": [
