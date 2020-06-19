@@ -3,9 +3,9 @@
 # to add sections to the footer of the website, add a section with the following attributes:
 #   title: the display text for the section
 menu_links_sections:
-  - title: Contributors
   - title: Foundation
   - title: Speakers
+  - title: Contributors
 
 # To add navigation links to the website, add a new link with the following attributes:
 #   name: display text of the link

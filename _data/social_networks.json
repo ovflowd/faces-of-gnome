@@ -1,0 +1,17 @@
+[
+  {
+    "id": "gitlab",
+    "base": "https://gitlab.gnome.org/",
+    "icon": "fab fa-gitlab"
+  },
+  {
+    "id": "twitter",
+    "base": "https://twitter.com/",
+    "icon": "fab fa-twitter"
+  },
+  {
+    "id": "blog",
+    "base": "",
+    "icon": "fa fa-globe-americas"
+  }
+]

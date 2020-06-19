@@ -3,19 +3,20 @@
     "id": "claudio-wunder",
     "name": "Claudio Wunder",
     "avatar": false,
-    "badge": "gnome-engagement",
-    "foundation": true,
-    "staff": false,
-    "contributor": true,
+    "title": "engagement-team",
+    "badges": [
+      "staff",
+      "contributor",
+      "foundation"
+    ],
     "active": true,
     "projects": [
       "gnome-events"
     ],
     "social": {
-      "gnome-ldap": "cwunder",
-      "gitlab": "cwunder",
+      "blog": "https://wunder.codes",
       "twitter": "ovflowd",
-      "blog": "https://wunder.codes"
+      "gitlab": "cwunder"
     }
   }
 ]

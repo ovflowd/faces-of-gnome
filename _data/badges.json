@@ -1,8 +1,32 @@
 [
   {
-    "id": "gnome-engagement",
+    "id": "engagement-team",
     "name": "GNOME Engagement Team",
-    "color": "#333",
+    "class": "small text-muted",
     "link": "https://gitlab.gnome.org/Teams/Engagement"
+  },
+  {
+    "id": "staff",
+    "name": "GNOME Staff",
+    "class": "small badge badge-primary",
+    "link": "https://www.gnome.org/foundation/staff/"
+  },
+  {
+    "id": "contributor",
+    "name": "Contributor",
+    "class": "small badge badge-secondary",
+    "link": "https://gitlab.gnome.org"
+  },
+  {
+    "id": "maintainer",
+    "name": "Maintainer",
+    "class": "small badge badge-info",
+    "link": "https://gitlab.gnome.org"
+  },
+  {
+    "id": "foundation",
+    "name": "Foundation",
+    "class": "small badge badge-success",
+    "link": "https://www.gnome.org/foundation/"
   }
 ]

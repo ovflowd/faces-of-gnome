@@ -6,8 +6,8 @@ page_main_heading: GNOME Contributors
 page_main_heading_description: Find out all our Contributors of the GNOME Project
 
 contributors:
-  heading: Check out GNOME Contributors
-  description: Here's a list of our Contributors
+  heading: All our Contributors
+  description: Check out, these are all our past and current GNOME Contributors. Thanks to them the GNOME Project and its technologies are possible.
 ---
 
 {% include header.html %}
@@ -30,6 +30,7 @@ contributors:
 
 {% assign badges = site.data.badges %}
 {% assign projects = site.data.projects %}
+{% assign social_networks = site.data.social_networks %}
 <section class="py-4 bg-light" id="team">
   <div class="container">
     <div class="row text-center d-flex justify-content-center">
@@ -40,12 +41,29 @@ contributors:
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
       {% for member in site.data.contributors %}
-        {% assign badge = badges | where:"id", member.badge | first %}
+
         <div class="col-6 col-md-4 col-lg-3 mb-3 px-0 px-md-3">
           <div class="d-flex flex-column align-items-center text-center shadow-sm-hover py-3 bg-white rounded">
             <img src="{{ member.avatar | default: '/assets/img/avatar.png' | prepend: site.url }}" class="pb-2 img-fluid rounded-circle" style="max-width: 100px;" alt="{{ 'Profile Photo of ' | append: member.name }}" />
             <span><strong>{{ member.name }}</strong></span>
-            <span class="small text-muted" style="{{ 'color: ' | append: badge.color }}">{{ badge.name }}</span>
+            {% assign position = badges | where:"id", member.title | first %}
+            <a href="{{ position.link }}" class="{{ position.class }}">{{ position.name }}</a>
+            <ul class="list-unstyled list-inline text-small my-1">
+              {% for entry in member.badges %}
+                {% assign badge = badges | where:"id", entry | first %}
+                <li class="list-inline-item">
+                  <a href="{{ badge.link }}" class="{{ badge.class }}">{{ badge.name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+            <ul class="list-unstyled list-inline text-small mt-1 mb-0">
+              {% for entry in member.social %}
+                {% assign social = social_networks | where:"id", entry[0] | first %}
+                <li class="list-inline-item">
+                  <a href="{{ entry[1] | prepend: social.base }}" class="text-muted text-primary"><i class="{{ social.icon }}"></i></a>
+                </li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
       {% endfor %}
