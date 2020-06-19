@@ -41,8 +41,9 @@ contributors:
       </div>
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
-      {% assign active_members = site.data.contributors | where:'active', true %}
-      {% for member in active_members  %}
+      {% assign active_members = site.data.members | where:'active', true %}
+      {% for member_hash in active_members  %}
+        {% assign member = member_hash[1] %}
         {% include sections/member.html %}
       {% endfor %}
     </div>

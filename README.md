@@ -57,9 +57,9 @@ The data used by the site is stored in the form of following files:
     ├── README.md
     └── setup.sh                            #script for setting up the website
 
-## The `contributors.json` schema
+## Adding yourself to the Index
 
-You may add yourself to the Members List by just adding your entry on the `contributors.json` the schema is easy to understand being:
+Just create a new YAML file on `_data/members/` directory containing the following entries. You may also give a look on [this template](_data/member-template.yml)
 
 | Field         | Description                                       | Example                 | Type                                                    |
 | ------------- |:-------------------------------------------------:| -----------------------:| ------------------------------------------------------- |

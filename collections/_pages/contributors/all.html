@@ -39,7 +39,10 @@ contributors:
       </div>
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
-      {% for member in site.data.contributors %}
+      {% assign member = site.data.become_a_contributor %}
+      {% include sections/member.html %}
+      {% for member_hash in site.data.members  %}
+        {% assign member = member_hash[1] %}
         {% include sections/member.html %}
       {% endfor %}
     </div>

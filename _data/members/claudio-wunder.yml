@@ -1,0 +1,16 @@
+---
+name: Claudio Wunder
+avatar: https://gitlab.gnome.org/uploads/-/system/user/avatar/2375/avatar.png?width=90
+title: engagement-team
+badges:
+  - contributor
+  - foundation
+  - speaker
+active: true
+projects:
+  - gnome-events
+social:
+  blog: https://wunder.codes
+  twitter: ovflowd
+  gitlab: cwunder
+---

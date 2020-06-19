@@ -1,0 +1,15 @@
+---
+name: John Smith
+avatar: https://my-avatar-url.png
+title: my-team
+badges:
+  - badge-one
+  - badge-two
+  - badge-third
+active: true
+projects:
+  - some-project
+social:
+  blog: https://my.site
+  twitter: handle
+  gitlab: handle
