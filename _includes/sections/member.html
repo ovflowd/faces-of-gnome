@@ -5,7 +5,7 @@
 
 <div class="col-6 col-md-4 col-lg-3 mb-3 px-0 px-md-3 gnome-member" data-index="{{ forloop.index | default: 1 }}">
     <div class="d-flex flex-column align-items-center text-center shadow-sm-hover py-3 bg-white rounded">
-        <img src="{{ member.avatar | default: default_avatar }}" class="pb-2 img-fluid rounded-circle" style="max-width: 100px;" alt="{{ 'Profile Photo of ' | append: member.name }}" />
+        <img src="{{ member.avatar | default: default_avatar }}" class="pb-2 img-fluid rounded-circle" style="max-width: 100px;max-height: 100px" alt="{{ 'Profile Photo of ' | append: member.name }}" />
         <span><strong class="gnome-member-name">{{ member.name }}</strong></span>
         {% assign position = badges | where:"id", member.title | first %}
         <a href="{{ position.link }}" class="{{ position.class }}">{{ position.name }}</a>

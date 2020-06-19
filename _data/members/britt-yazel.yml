@@ -6,8 +6,8 @@ badges:
   - contributor
   - maintainer
   - foundation
-  - foundation-board
   - speaker
+  - foundation-board
 active: true
 projects:
   - gnome-events
