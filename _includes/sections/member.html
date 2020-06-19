@@ -13,10 +13,10 @@
                 {% assign badge = badges | where:"id", entry | first %}
                 <li class="list-inline-item">
                     <a href="{{ badge.link }}" class="{{ badge.class }}">
+                        {{ badge.name }}
                         {% if badge.icon %}
                             <i class="{{ badge.icon }}"></i>
                         {% endif %}
-                        {{ badge.name }}
                     </a>
                 </li>
             {% endfor %}

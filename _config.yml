@@ -19,7 +19,7 @@ twitter_username: GNOME
 website_repo: https://gitlab.gnome.org/Teams/Engagement/websites/contributors-index
 
 # jekyll configuration options
-url: https://teams.pages.gitlab.gnome.org/Engagement/websites/contributors-index/
+url: https://teams.pages.gitlab.gnome.org/Engagement/websites/contributors-index
 encoding: utf-8
 
 # markdown converter

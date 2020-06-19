@@ -8,9 +8,9 @@
   },
   {
     "id": "staff",
-    "name": "GNOME Staff",
-    "class": "small badge badge-primary",
-    "icon": false,
+    "name": "Staff",
+    "class": "small badge",
+    "icon": "fas fa-user-shield",
     "link": "https://www.gnome.org/foundation/staff/"
   },
   {
@@ -40,5 +40,12 @@
     "class": "small badge badge-success",
     "icon": "fa fa-award",
     "link": "https://www.gnome.org/foundation/governance"
+  },
+  {
+    "id": "speaker",
+    "name": "Speaker",
+    "class": "small badge",
+    "icon": "fas fa-comment",
+    "link": "https://events.gnome.org"
   }
 ]

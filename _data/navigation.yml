@@ -50,11 +50,6 @@ menu_links:
     header: true
     footer: true
     section: Speakers
-  - name: GUADEC Speakers
-    href: /speakers/guadec
-    header: false
-    footer: true
-    section: Speakers
 
 # To add social links to the website, add a new social link with the following attributes:
 #   icon: the name of the icon on https://fontawesome.com/icons

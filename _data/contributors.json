@@ -8,6 +8,9 @@
       "staff",
       "contributor",
       "foundation",
+      "speaker",
+      "maintainer",
+      "foundation-board"
     ],
     "active": true,
     "projects": [

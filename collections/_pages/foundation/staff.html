@@ -1,13 +1,13 @@
 ---
 navbar_type: dark
-permalink: '/foundation/board'
+permalink: '/foundation/staff'
 
-page_main_heading: GNOME Board of Directors
-page_main_heading_description: Who are the leaders of the GNOME Project?
+page_main_heading: GNOME Foundation Staff
+page_main_heading_description: Who are the employees of the GNOME Foundation?
 
 foundation:
-  heading: Current Board of Directors
-  description: This is the current Board of Directors of the GNOME Foundation
+  heading: Current GNOME Staff
+  description: These are the current employees of the GNOME Foundation
 ---
 
 {% include header.html %}
@@ -22,13 +22,13 @@ foundation:
         <span class="text-info lead">{{ page.page_main_heading_description }}</span>
       </div>
       <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-community.svg' | prepend: site.url }}" class="img-fluid" alt="Maintaers Wallpaper" />
+        <img src="{{ '/assets/img/wall-staff.svg' | prepend: site.url }}" class="img-fluid" alt="Maintaers Wallpaper" />
       </div>
     </div>
   </div>
 </section>
 
-{% include sections/foundation-board.html %}
+{% include sections/foundation-staff.html %}
 
 <section class="py-4 bg-light" id="team">
   <div class="container">
@@ -40,7 +40,7 @@ foundation:
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
       {% for member in site.data.contributors  %}
-        {% if member.badges contains 'foundation-board' %}
+        {% if member.badges contains 'staff' %}
           {% include sections/member.html %}
         {% endif %}
       {% endfor %}

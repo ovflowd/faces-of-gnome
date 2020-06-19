@@ -1,13 +1,13 @@
 ---
 navbar_type: dark
-permalink: '/foundation/board'
+permalink: '/speakers'
 
-page_main_heading: GNOME Board of Directors
-page_main_heading_description: Who are the leaders of the GNOME Project?
+page_main_heading: GNOME Speakers
+page_main_heading_description: Find out who held a talk or workshop on past GNOME Events
 
 foundation:
-  heading: Current Board of Directors
-  description: This is the current Board of Directors of the GNOME Foundation
+  heading: The Speaker Index
+  description: These are all the people that hold any kind of activity during past GNOME Events
 ---
 
 {% include header.html %}
@@ -28,7 +28,8 @@ foundation:
   </div>
 </section>
 
-{% include sections/foundation-board.html %}
+{% include sections/events.html %}
+{% include sections/speakers.html %}
 
 <section class="py-4 bg-light" id="team">
   <div class="container">
@@ -40,7 +41,7 @@ foundation:
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
       {% for member in site.data.contributors  %}
-        {% if member.badges contains 'foundation-board' %}
+        {% if member.badges contains 'speaker' %}
           {% include sections/member.html %}
         {% endif %}
       {% endfor %}
