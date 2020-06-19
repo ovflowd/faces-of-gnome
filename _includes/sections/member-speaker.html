@@ -3,29 +3,33 @@
 {% assign default_avatar = '/assets/img/avatar.png' | prepend: site.url %}
 
 <div class="col-6 col-md-4 col-lg-3 mb-3 px-0 px-md-3 gnome-member" data-index="{{ forloop.index | default: 1 }}">
-    <div class="d-flex flex-column align-items-center text-center shadow-sm-hover py-3 bg-white rounded">
-        <div class="rounded-circle mb-2" style="background: url('{{ member.avatar | default: default_avatar }}') center;width: 100px;height:100px;background-size:cover;">&nbsp;</div>
-        <span><strong class="gnome-member-name">{{ member.name }}</strong></span>
-        {% assign position = badges | where:"id", member.title | first %}
-        <span class="small text-muted">{{ member.title }}</span>
-        <hr class="w-75 mb-0">
-        <ul class="list-unstyled list-inline text-small my-1">
-            {% for entry in member.conferences %}
-                {% assign conference = conferences | where:"id", entry | first %}
-                    <li class="list-inline-item">
-                        <a href="{{ conference.link }}" class="small badge badge-primary">
-                            {{ conference.name }}
-                        </a>
-                    </li>
-            {% endfor %}
-        </ul>
-        <ul class="list-unstyled list-inline text-small mt-1 mb-0">
-            {% for entry in member.social %}
-                {% assign social = social_networks | where:"id", entry[0] | first %}
-                <li class="list-inline-item">
-                    <a href="{{ entry[1] | prepend: social.base }}" class="text-muted text-primary"><i class="{{ social.icon }}"></i></a>
-                </li>
-            {% endfor %}
-        </ul>
+  <div class="d-flex flex-column align-items-center text-center shadow-sm-hover py-3 bg-white rounded">
+    <div class="rounded-circle mb-2"
+         style="background: url('{{ member.avatar | default: default_avatar }}') center;width: 100px;height:100px;background-size:cover;">
+      &nbsp;
     </div>
+    <span><strong class="gnome-member-name">{{ member.name }}</strong></span>
+    {% assign position = badges | where:"id", member.title | first %}
+    <span class="small text-muted">{{ member.title }}</span>
+    <hr class="w-75 mb-0">
+    <ul class="list-unstyled list-inline text-small my-1">
+      {% for entry in member.conferences %}
+          {% assign conference = conferences | where:"id", entry | first %}
+          <li class="list-inline-item">
+            <a href="{{ conference.link }}" class="small badge badge-primary">
+              {{ conference.name }}
+            </a>
+          </li>
+      {% endfor %}
+    </ul>
+    <ul class="list-unstyled list-inline text-small mt-1 mb-0">
+      {% for entry in member.social %}
+          {% assign social = social_networks | where:"id", entry[0] | first %}
+          <li class="list-inline-item">
+            <a href="{{ entry[1] | prepend: social.base }}" class="text-muted text-primary"><i
+                    class="{{ social.icon }}"></i></a>
+          </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

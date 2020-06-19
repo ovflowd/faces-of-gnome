@@ -11,7 +11,6 @@ foundation:
 ---
 
 {% include header.html %}
-
 {% include navbar.html %}
 
 <section class="py-4 d-flex flex-column align-items-center bg-dark text-white">
@@ -22,7 +21,8 @@ foundation:
         <span class="text-info lead">{{ page.page_main_heading_description }}</span>
       </div>
       <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-community.svg' | prepend: site.url }}" class="img-fluid" alt="Maintaers Wallpaper" />
+        <img src="{{ '/assets/img/wall-community.svg' | prepend: site.url }}" class="img-fluid"
+             alt="Maintaers Wallpaper"/>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@ foundation:
       </div>
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto">
-      {% for member_hash in site.data.members  %}
+      {% for member_hash in site.data.members %}
         {% assign member = member_hash[1] %}
         {% if member.active == true and member.badges contains 'foundation-board' %}
           {% include sections/member.html %}

@@ -11,7 +11,6 @@ contributors:
 ---
 
 {% include header.html %}
-
 {% include navbar.html %}
 
 <section class="py-4 d-flex flex-column align-items-center bg-dark text-white">
@@ -22,7 +21,8 @@ contributors:
         <span class="text-info lead">{{ page.page_main_heading_description }}</span>
       </div>
       <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-contributors.svg' | prepend: site.url }}" class="img-fluid" alt="Community Wallpaper" />
+        <img src="{{ '/assets/img/wall-contributors.svg' | prepend: site.url }}" class="img-fluid"
+             alt="Community Wallpaper"/>
       </div>
     </div>
   </div>
@@ -36,7 +36,8 @@ contributors:
       <div class="col-md-10 col-lg-7">
         <h2 class="font-weight-light mb-3">{{ page.contributors.heading }}</h2>
         <div class="alert alert-primary mb-0" role="alert">
-          <strong>Notice:</strong> This list is updated manually and may not contain the real list of current and active GNOME Contributors.
+          <strong>Notice:</strong> This list is updated manually and may not contain the real list of current and active
+          GNOME Contributors.
         </div>
       </div>
     </div>
@@ -51,7 +52,8 @@ contributors:
     <div class="row d-flex justify-content-center pt-3 mx-auto">
       <nav aria-label="Page navigation example">
         <ul class="pagination">
-          <input aria-label="" type="text" class="form-control rounded-left gnome-members-filter" style="width: 300px; border-radius: 0;" placeholder="Search for a Contributor..."/>
+          <input aria-label="" type="text" class="form-control rounded-left gnome-members-filter"
+                 style="width: 300px; border-radius: 0;" placeholder="Search for a Contributor..."/>
         </ul>
       </nav>
     </div>
