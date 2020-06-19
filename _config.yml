@@ -9,7 +9,6 @@ title: GNOME Contributors - All our current Contributors
 # short description of the website
 description: GNOME Contributors is an open platform were we share our past and current Contributors profiles, the projects they worked on and more. We also list Foundation Members, GNOME Events Speakers and Foundation Staff
 
-# tell about the gtk project in as less words as possible for seo.
 mini_description: An all in-one place to list our past and active Contributors for the GNOME Project
 
 # website keywords for seo
@@ -60,13 +59,6 @@ collections:
     output: true
   pages:
     output: true
-
-defaults:
-  - scope:
-      type: docs
-    values:
-      layout: documentation
-      navbar_type: dark
 
 # website statistics
 

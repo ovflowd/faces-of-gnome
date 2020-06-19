@@ -1,0 +1,57 @@
+---
+navbar_type: dark
+permalink: ''
+
+page_main_heading: GNOME Contributors
+page_main_heading_description: Find out all our Contributors of the GNOME Project
+
+contributors:
+  heading: Check out GNOME Contributors
+  description: Here's a list of our Contributors
+---
+
+{% include header.html %}
+
+{% include navbar.html %}
+
+<section class="py-4 d-flex flex-column align-items-center bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 d-flex justify-content-end flex-column main-heading">
+        <h1 class="display-3 pb-3">{{ page.page_main_heading }}</h1>
+        <span class="text-info lead">{{ page.page_main_heading_description }}</span>
+      </div>
+      <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
+        <img src="{{ '/assets/img/wall-community.svg' | prepend: site.url }}" class="img-fluid" alt="Community Wallpaper" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% assign badges = site.data.badges %}
+{% assign projects = site.data.projects %}
+<section class="py-4 bg-light" id="team">
+  <div class="container">
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-md-10 col-lg-7">
+        <h2 class="font-weight-light mb-3">{{ page.contributors.heading }}</h2>
+        <span class="text-muted">{{ page.contributors.description }}</span>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center pt-5 mx-auto">
+      {% for member in site.data.contributors %}
+        {% assign badge = badges | where:"id", member.badge | first %}
+        <div class="col-6 col-md-4 col-lg-3 mb-3 px-0 px-md-3">
+          <div class="d-flex flex-column align-items-center text-center shadow-sm-hover py-3 bg-white rounded">
+            <img src="{{ member.avatar | default: '/assets/img/avatar.png' | prepend: site.url }}" class="pb-2 img-fluid rounded-circle" style="max-width: 100px;" alt="{{ 'Profile Photo of ' | append: member.name }}" />
+            <span><strong>{{ member.name }}</strong></span>
+            <span class="small text-muted" style="{{ 'color: ' | append: badge.color }}">{{ badge.name }}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include scripts.html %}
+{% include footer.html %}

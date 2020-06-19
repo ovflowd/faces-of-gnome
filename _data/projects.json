@@ -1,0 +1,10 @@
+[
+  {
+    "id": "gnome-events",
+    "name": "GNOME Events",
+    "repository": "https://gitlab.gnome.org/Teams/Engagement/Events/gnome-indico-resources",
+    "maintainers": [
+      "claudio-wunder"
+    ]
+  }
+]
