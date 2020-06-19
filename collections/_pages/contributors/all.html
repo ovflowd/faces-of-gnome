@@ -41,10 +41,17 @@ contributors:
     <div class="row d-flex justify-content-center pt-5 mx-auto">
       {% assign member = site.data.become_a_contributor %}
       {% include sections/member.html %}
-      {% for member_hash in site.data.members  %}
+      {% for member_hash in site.data.members %}
         {% assign member = member_hash[1] %}
         {% include sections/member.html %}
       {% endfor %}
+    </div>
+    <div class="row d-flex justify-content-center pt-3 mx-auto">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <input aria-label="" type="text" class="form-control rounded-left gnome-members-filter" style="width: 300px; border-radius: 0;" placeholder="Search for a Contributor..."/>
+        </ul>
+      </nav>
     </div>
   </div>
 </section>
