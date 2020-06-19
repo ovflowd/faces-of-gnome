@@ -1,0 +1,17 @@
+---
+name: Britt Yazel
+avatar: https://www.brittyazel.com/img/photo.jpg
+title: engagement-team
+badges:
+  - contributor
+  - maintainer
+  - foundation
+  - foundation-board
+  - speaker
+active: true
+projects:
+  - gnome-events
+social:
+  blog: https://blog.brittyazel.com/
+  twitter: bwyazel
+  gitlab: bwyazel
