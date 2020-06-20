@@ -21,34 +21,40 @@ The data used by the site is stored in the form of following files:
 ## Project Structure
 
     ...
-    ├── _data                               #contains site's data files
+    ├── .gitlab/                            #contains gitlab template files for bugs and merge requests
+    ├── _data/                              #contains site's data files
+    │   ├── members/                        #contains all the members/contributors stored in the platform in YML format
     │   ├── navigation.yml                  #links to be added to the site's header and footer sections
     │   ├── projects.json                   #contains all the GNOME projects metadata
-    │   ├── contributors.json               #contains the list of contributors
-    │   ├── badges.json                     #contains all the existing GNOME badges
+    │   ├── badges.json                     #contains metadata of all GNOME Badges/Tags
+    │   ├── events.json                     #contains metadata of all GNOME conferences
     │   ├── social_networks.json            #contains all kind of supported social networks
-    ├── _includes                           #contains site's include files
+    ├── _includes/                          #contains numerous templates like headers and footer
     │   ├── footer.html                     #the footer of the site
     │   ├── header.html                     #the meta data of the site
     │   └── navbar.html                     #the navbar of the site
-    │   └──── sections                      #generic sections of the website
-    │         └── members.html              #contaisn the member widget tempate
-    ├── assets                              #contains site's valuable entities
-    │   ├── font                            #contains site's font: Red Hat Display
-    │   ├── img                             #contains site's images and illustrations
+    │   └── contributors/                   #contains templates for the contributors pages
+    │   └── foundation/                     #contains templates for the foundation pages
+    │   └── speakers/                       #contains templates for the speakers pages
+    │   └── sections/                       #generic templates reused across the website
+    │       ├── members.html                #contains the member widget template
+    │       ├── member-speaker.html         #contains a member widget that shows the conferences the member attended instead of the badges
+    │       └── member-reduced.html         #contains a reduced member widget template without badges
+    ├── assets/                             #contains site's valuable entities
+    │   ├── font/                           #contains site's font: Red Hat Display
+    │   ├── img/                            #contains site's images and illustrations
     │   └── scss                            #contains site's preprocessor stylesheets   
     │       ├── colorful.scss               #stylesheet for syntax highlighting
     │       ├── index.scss                  #stylesheet for user defined styles
     │       ├── markdown.scss               #stylesheet for styling the markdown content
     │       └── theme.scss                  #stylesheet for website's theme. Generated from Bootstrap 
-    ├── collections                         #contains the site's collections
-    │   ├── _pages                          #contains site's main pages
+    ├── collections/                        #contains the site's collections
+    │   ├── _pages/                         #contains site's main pages
     ├── _config.yml                         #contains Jekyll settings for the site
     ├── .gitignore
     ├── .gitlab-ci.yml                      #for Gitlab Continuous Integration and Deployment
-    ├── 404.html
+    ├── 404.html                            #custom not found page. Only works when deployed to GitLab Pages
     ├── CODE_OF_CONDUCT.md
-    ├── CONTRIBUTING.md
     ├── Gemfile                             #contains gem dependencies for the site.
     ├── Gemfile.lock
     ├── LICENSE.txt
@@ -57,7 +63,7 @@ The data used by the site is stored in the form of following files:
     ├── README.md
     └── setup.sh                            #script for setting up the website
 
-## Adding yourself to the Index
+## Adding yourself to the Website
 
 Just create a new YAML file on `_data/members/` directory containing the following entries. You may also give a look on [this template](_data/member-template.yml)
 
@@ -72,7 +78,7 @@ Just create a new YAML file on `_data/members/` directory containing the followi
 | conferences   | The Conferences you participated                  | `['guadec-2018']`       | array:entries from `events.json`                        |
 | social        | Social Networks that you have                     | `{'twitter': 'handle'}` | collection:key from `social_networks.json`;value:string |
 
-And then just add a new entry and commit the changes with a **Merge Request**. And it will be approved if it's correct.
+Then just add a new entry and commit the changes with a **Merge Request**. It will be approved if it's correct.
 
 ## Add Custom Badges/Social Networks and Projects
 
