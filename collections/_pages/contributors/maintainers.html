@@ -31,11 +31,17 @@ maintainers:
   <div class="container">
     {% assign projects = site.data.projects %}
     {% for project in projects %}
-      <div class="row text-left d-flex justify-content-start">
-        <div class="col-md-10 col-lg-7">
-          <h6 class="text-primary small font-weight-normal letter-spacing-custom">{{ page.maintainers.subheading | upcase }}</h6>
-          <h4 class="font-weight-light mb-1">{{ project.name }}</h4>
-          <small class="text-muted">{{ project.description }}</small>
+      <div class="row no-gutters d-flex justify-content-start">
+        <h6 class="d-none d-md-block col-12 text-primary small font-weight-normal letter-spacing-custom pl-0">{{ page.maintainers.subheading | upcase }}</h6>
+        <div class="row no-gutters d-flex justify-content-start pt-1">
+          <div class="col-12 col-sm-auto pb-2 mr-3">
+            <img src="{{ project.icon }}" class="float-left app-icon-small img-fluid app-icon icon-dropshadow" style="opacity:.8;" alt="Fonts">
+          </div>
+          <div class="col">
+            <h6 class="d-block pl-0 d-md-none col-12 text-primary small font-weight-normal letter-spacing-custom">{{ page.maintainers.subheading | upcase }}</h6>
+            <h4 class="font-weight-light mb-1">{{ project.name }}</h4>
+            <small class="text-muted">{{ project.description }}</small>
+          </div>
         </div>
       </div>
       <div class="row d-flex justify-content-start pt-4 pb-4">

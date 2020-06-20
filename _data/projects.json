@@ -2,6 +2,7 @@
   {
     "id": "gnome-events",
     "name": "GNOME Events",
+    "icon": "https://www.gtk.org/assets/img/apps/app-polari.png",
     "description": "GNOME Events is the GNOME Platform for all GNOME Conferences and Engagement Activities",
     "repository": "https://gitlab.gnome.org/Teams/Engagement/Events/gnome-indico-resources",
     "maintainers": [
@@ -12,6 +13,7 @@
   {
     "id": "gnome-contributors",
     "name": "GNOME Contributors",
+    "icon": "https://www.gtk.org/assets/img/apps/app-dictionary.png",
     "description": "GNOME Contributors is the platform of the Faces of GNOME.",
     "repository": "https://gitlab.gnome.org/Teams/Engagement/websites/contributors-index",
     "maintainers": [
