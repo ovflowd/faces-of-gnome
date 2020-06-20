@@ -1,6 +1,6 @@
 {% assign member_badges = site.data.badges %}
 
-<ul class="list-unstyled list-inline text-small my-1">
+<ul class="list-unstyled list-inline text-small my-3">
   {% for entry in include.list limit: 4 %}
     {% assign badge = member_badges | where:"id", entry | first %}
     <li class="list-inline-item">
