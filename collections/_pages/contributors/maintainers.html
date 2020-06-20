@@ -42,7 +42,10 @@ maintainers:
         {% for member_hash in site.data.members %}
           {% if member_hash[1].active == true and project.maintainers contains member_hash[0] %}
             {% assign member = member_hash[1] %}
-            {% include sections/member-reduced.html member=member %}
+            {% capture widgets %}
+              {% include sections/member-social.html list=member.social %}
+            {% endcapture %}
+            {% include sections/member.html member=member widgets=widgets %}
           {% endif %}
         {% endfor %}
       </div>

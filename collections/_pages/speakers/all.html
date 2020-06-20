@@ -30,9 +30,13 @@ speakers:
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto gnome-members-list">
       {% for member_hash in site.data.members %}
-        {% assign member = member_hash[1] %}
-        {% if member.badges contains 'speaker' %}
-          {% include sections/member-speaker.html member=member %}
+        {% if member_hash[1].badges contains 'speaker' %}
+          {% assign member = member_hash[1] %}
+          {% capture widgets %}
+            {% include sections/member-conferences.html list=member.conferences %}
+            {% include sections/member-social.html list=member.social %}
+          {% endcapture %}
+          {% include sections/member.html member=member widgets=widgets %}
         {% endif %}
       {% endfor %}
     </div>

@@ -9,7 +9,6 @@ foundation:
   heading: Current GNOME Staff
   description: These are the current employees of the GNOME Foundation
 
-
 staff_roles:
   heading: The roles of the Staff
   list:
@@ -45,9 +44,12 @@ staff_roles:
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto gnome-members-list">
       {% for member_hash in site.data.members %}
-        {% assign member = member_hash[1] %}
-        {% if member.active == true and member.badges contains 'staff' %}
-          {% include sections/member.html member=member %}
+        {% if member_hash[1].active == true and member_hash[1].badges contains 'staff' %}
+          {% assign member = member_hash[1] %}
+          {% capture widgets %}
+            {% include sections/member-social.html list=member.social %}
+          {% endcapture %}
+          {% include sections/member.html member=member widgets=widgets %}
         {% endif %}
       {% endfor %}
     </div>

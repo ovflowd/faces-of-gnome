@@ -1,35 +1,10 @@
-{% assign badges = site.data.badges %}
-{% assign social_networks = site.data.social_networks %}
 {% assign default_avatar = '/assets/img/avatar.png' | prepend: site.url %}
 
 <div class="col-6 col-md-4 col-lg-3 mb-3 px-0 px-md-3 gnome-member" data-index="{{ forloop.index | default: 1 }}">
   <div class="d-flex flex-column align-items-center text-center shadow-sm-hover py-3 bg-white rounded">
     <div class="rounded-circle mb-2 avatar-picture" style="background-image:url( '{{ include.member.avatar | default: default_avatar }}' )"></div>
     <span><strong class="gnome-member-name">{{ include.member.name }}</strong></span>
-    {% assign position = badges | where:"id", include.member.title | first %}
     <span class="small text-muted">{{ include.member.title }}</span>
-    <ul class="list-unstyled list-inline text-small my-1">
-      {% for entry in include.member.badges limit: 4 %}
-        {% assign badge = badges | where:"id", entry | first %}
-        <li class="list-inline-item">
-          <a href="{{ badge.link }}" class="{{ badge.class }}">
-            {{ badge.name }}
-            {% if badge.icon %}
-              <i class="{{ badge.icon }}"></i>
-            {% endif %}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-    <ul class="list-unstyled list-inline text-small mt-1 mb-0">
-      {% for entry in include.member.social %}
-        {% assign social = social_networks | where:"id", entry[0] | first %}
-        <li class="list-inline-item">
-          <a href="{{ entry[1] | prepend: social.base }}" class="text-muted text-primary">
-            <i class="{{ social.icon }}"></i>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    {{ include.widgets }}
   </div>
 </div>

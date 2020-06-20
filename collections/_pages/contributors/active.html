@@ -36,9 +36,13 @@ contributors:
     </div>
     <div class="row d-flex justify-content-center pt-5 mx-auto gnome-members-list">
       {% for member_hash in site.data.members %}
-        {% assign member = member_hash[1] %}
-        {% if member.active == true %}
-          {% include sections/member.html member=member %}
+        {% if member_hash[1].active == true %}
+          {% assign member = member_hash[1] %}
+          {% capture widgets %}
+            {% include sections/member-badges.html list=member.badges %}
+            {% include sections/member-social.html list=member.social %}
+          {% endcapture %}
+          {% include sections/member.html member=member widgets=widgets %}
         {% endif %}
       {% endfor %}
     </div>

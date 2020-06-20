@@ -64,7 +64,11 @@ type_of_contributors:
     <div class="row d-flex justify-content-center pt-5 mx-auto gnome-members-list">
       {% for member_hash in site.data.members %}
         {% assign member = member_hash[1] %}
-        {% include sections/member.html member=member %}
+        {% capture widgets %}
+          {% include sections/member-badges.html list=member.badges %}
+          {% include sections/member-social.html list=member.social %}
+        {% endcapture %}
+        {% include sections/member.html member=member widgets=widgets %}
       {% endfor %}
     </div>
     <div class="row d-flex justify-content-center pt-3 mx-auto">

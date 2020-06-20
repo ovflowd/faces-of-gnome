@@ -28,18 +28,19 @@ The data used by the site is stored in the form of following files:
     │   ├── projects.json                   #contains all the GNOME projects metadata
     │   ├── badges.json                     #contains metadata of all GNOME Badges/Tags
     │   ├── events.json                     #contains metadata of all GNOME conferences
-    │   ├── social_networks.json            #contains all kind of supported social networks
+    │   └── social_networks.json            #contains all kind of supported social networks
     ├── _includes/                          #contains numerous templates like headers and footer
     │   ├── footer.html                     #the footer of the site
     │   ├── header.html                     #the meta data of the site
-    │   └── navbar.html                     #the navbar of the site
-    │   └── contributors/                   #contains templates for the contributors pages
-    │   └── foundation/                     #contains templates for the foundation pages
-    │   └── speakers/                       #contains templates for the speakers pages
+    │   ├── navbar.html                     #the navbar of the site
+    │   ├── contributors/                   #contains templates for the contributors pages
+    │   ├── foundation/                     #contains templates for the foundation pages
+    │   ├── speakers/                       #contains templates for the speakers pages
     │   └── sections/                       #generic templates reused across the website
     │       ├── members.html                #contains the member widget template
-    │       ├── member-speaker.html         #contains a member widget that shows the conferences the member attended instead of the badges
-    │       └── member-reduced.html         #contains a reduced member widget template without badges
+    │       ├── member-badges.html          #contains a sub-widget for displaying a member badges
+    │       ├── member-conferences.html     #contains a sub-widget for displaying a member conferences list
+    │       └── member-social.html          #contains a sub-widget for displaying a member social networks
     ├── assets/                             #contains site's valuable entities
     │   ├── font/                           #contains site's font: Red Hat Display
     │   ├── img/                            #contains site's images and illustrations
@@ -49,7 +50,7 @@ The data used by the site is stored in the form of following files:
     │       ├── markdown.scss               #stylesheet for styling the markdown content
     │       └── theme.scss                  #stylesheet for website's theme. Generated from Bootstrap 
     ├── collections/                        #contains the site's collections
-    │   ├── _pages/                         #contains site's main pages
+    │   └── _pages/                         #contains site's main pages
     ├── _config.yml                         #contains Jekyll settings for the site
     ├── .gitignore
     ├── .gitlab-ci.yml                      #for Gitlab Continuous Integration and Deployment

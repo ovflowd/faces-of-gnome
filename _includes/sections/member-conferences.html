@@ -1,0 +1,11 @@
+{% assign member_conferences = site.data.events %}
+
+<hr class="w-75 mb-0">
+<ul class="list-unstyled list-inline text-small my-1">
+  {% for entry in include.list %}
+    {% assign conference = member_conferences | where:"id", entry | first %}
+    <li class="list-inline-item">
+      <a href="{{ conference.link }}" class="small badge badge-primary">{{ conference.name }}</a>
+    </li>
+  {% endfor %}
+</ul>
