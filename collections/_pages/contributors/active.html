@@ -2,50 +2,43 @@
 navbar_type: dark
 permalink: '/contributors/active'
 
-page_main_heading: GNOME Contributors
-page_main_heading_description: Find out our current Contributors of the GNOME Project
+heading: GNOME Contributors
+description: Find out our current Contributors of the GNOME Project
 
 contributors:
   heading: Current Contributors
-  description: These are the current Contributors of GNOME. This list is updated manually.
+  description: These are the current Contributors of GNOME.
+  notice: <strong>Notice:</strong> This list is updated manually and may not contain the real list of current and active GNOME Contributors.
 ---
 
 {% include header.html %}
 {% include navbar.html %}
+{% include subheader.html
+  image='/assets/img/wall-contributors.svg'
+  heading=page.heading
+  description=page.description %}
 
-<section class="py-4 d-flex flex-column align-items-center bg-dark text-white">
+{% include contributors/who-makes-gnome-possible.html %}
+
+<section class="pb-5 bg-white" id="notice">
   <div class="container">
-    <div class="row">
-      <div class="col-md-5 d-flex justify-content-end flex-column main-heading">
-        <h1 class="display-3 pb-3">{{ page.page_main_heading }}</h1>
-        <span class="text-info lead">{{ page.page_main_heading_description }}</span>
-      </div>
-      <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-contributors.svg' | prepend: site.url }}" class="img-fluid"
-             alt="Community Wallpaper"/>
-      </div>
-    </div>
+    <div class="alert alert-primary mb-0" role="alert">{{ page.contributors.notice }}</div>
   </div>
 </section>
-
-{% include sections/contributors.html %}
 
 <section class="py-4 bg-light" id="team">
   <div class="container">
     <div class="row text-center d-flex justify-content-center">
       <div class="col-md-10 col-lg-7">
         <h2 class="font-weight-light mb-3">{{ page.contributors.heading }}</h2>
-        <div class="alert alert-primary mb-0" role="alert">
-          <strong>Notice:</strong> This list is updated manually and may not contain the real list of current and active
-          GNOME Contributors.
-        </div>
+        <span class="text-muted">{{ page.contributors.description }}</span>
       </div>
     </div>
-    <div class="row d-flex justify-content-center pt-5 mx-auto">
+    <div class="row d-flex justify-content-center pt-5 mx-auto gnome-members-list">
       {% for member_hash in site.data.members %}
         {% assign member = member_hash[1] %}
         {% if member.active == true %}
-          {% include sections/member.html %}
+          {% include sections/member.html member=member %}
         {% endif %}
       {% endfor %}
     </div>
@@ -53,7 +46,7 @@ contributors:
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <input aria-label="" type="text" class="form-control rounded-left gnome-members-filter"
-                 style="width: 300px; border-radius: 0;" placeholder="Search for a Contributor..."/>
+                 placeholder="Search for a GNOMie..."/>
         </ul>
       </nav>
     </div>

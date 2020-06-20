@@ -2,64 +2,50 @@
 navbar_type: dark
 permalink: '/contributors/maintainers'
 
-page_main_heading: GNOME Maintainers
-page_main_heading_description: Find out the about the people that drive GNOME Development
+heading: GNOME Maintainers
+description: Find out the about the people that drive GNOME Development
 
 contributors:
   heading: Current Maintainers
   description: These are the individuals that currently lead the Development of GNOME Applications, GTK, and many more.
+
+maintainers:
+  heading: See our Maintainers!
+  description: Below you see a complete list of our GNOME Maintainers grouped by Project they maintain!
+  subheading: maintainers of
 ---
 
 {% include header.html %}
 {% include navbar.html %}
+{% include subheader.html
+  image='/assets/img/wall-maintainers.svg'
+  heading=page.heading
+  description=page.description %}
 
-<section class="py-4 d-flex flex-column align-items-center bg-dark text-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 d-flex justify-content-end flex-column main-heading">
-        <h1 class="display-3 pb-3">{{ page.page_main_heading }}</h1>
-        <span class="text-info lead">{{ page.page_main_heading_description }}</span>
-      </div>
-      <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-maintainers.svg' | prepend: site.url }}" class="img-fluid"
-             alt="Maintaers Wallpaper"/>
-      </div>
-    </div>
-  </div>
-</section>
-
-{% include sections/maintainers.html %}
-
-<section class="pt-0 pb-5" id="our_maintainers">
-  <div class="container">
-    <div class="row text-center d-flex justify-content-center">
-      <div class="col-md-10 col-lg-7">
-        <h2 class="font-weight-light mb-3">{{ page.page_main_heading }}</h2>
-        <span class="text-muted">{{ page.page_main_heading_description | markdownify }}</span>
-      </div>
-    </div>
-  </div>
-</section>
+{% include contributors/who-maintains-gnome.html %}
+{% include contributors/our-maintainers.html
+  heading=page.maintainers.heading
+  description=page.maintainers.description %}
 
 <section class="pt-5 bg-light" id="team">
   <div class="container">
     {% assign projects = site.data.projects %}
     {% for project in projects %}
-    <div class="row text-left d-flex justify-content-start">
-      <div class="col-md-10 col-lg-7">
-        <h6 class="text-primary small font-weight-normal letter-spacing-custom">MAINTAINERS OF</h6>
-        <h4 class="font-weight-light mb-1">{{ project.name }}</h4>
-        <small class="text-muted">{{ project.description }}</small>
+      <div class="row text-left d-flex justify-content-start">
+        <div class="col-md-10 col-lg-7">
+          <h6 class="text-primary small font-weight-normal letter-spacing-custom">{{ page.maintainers.subheading | upcase }}</h6>
+          <h4 class="font-weight-light mb-1">{{ project.name }}</h4>
+          <small class="text-muted">{{ project.description }}</small>
+        </div>
       </div>
-    </div>
-    <div class="row d-flex justify-content-start pt-4 pb-4">
-      {% for member_hash in site.data.members %}
-      {% if member_hash[1].active == true and project.maintainers contains member_hash[0] %}
-      {% assign member = member_hash[1] %}
-      {% include sections/member-reduced.html %}
-      {% endif %}
-      {% endfor %}
-    </div>
+      <div class="row d-flex justify-content-start pt-4 pb-4">
+        {% for member_hash in site.data.members %}
+          {% if member_hash[1].active == true and project.maintainers contains member_hash[0] %}
+            {% assign member = member_hash[1] %}
+            {% include sections/member-reduced.html member=member %}
+          {% endif %}
+        {% endfor %}
+      </div>
     {% endfor %}
   </div>
 </section>

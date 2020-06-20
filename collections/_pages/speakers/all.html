@@ -2,48 +2,37 @@
 navbar_type: dark
 permalink: '/speakers'
 
-page_main_heading: GNOME Speakers
-page_main_heading_description: Find out who held a talk or workshop on past GNOME Events
+heading: GNOME Speakers
+description: Find out who held a talk or workshop on past GNOME Events
 
-foundation:
+speakers:
   heading: The Speaker Index
   description: These are all the people that hold any kind of activity during past GNOME Events
 ---
 
 {% include header.html %}
 {% include navbar.html %}
+{% include subheader.html
+  image='/assets/img/wall-community.svg'
+  heading=page.heading
+  description=page.description %}
 
-<section class="py-4 d-flex flex-column align-items-center bg-dark text-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 d-flex justify-content-end flex-column main-heading">
-        <h1 class="display-3 pb-3">{{ page.page_main_heading }}</h1>
-        <span class="text-info lead">{{ page.page_main_heading_description }}</span>
-      </div>
-      <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-community.svg' | prepend: site.url }}" class="img-fluid"
-             alt="Maintaers Wallpaper"/>
-      </div>
-    </div>
-  </div>
-</section>
-
-{% include sections/events.html %}
-{% include sections/speakers.html %}
+{% include speakers/what-are-gnome-events.html %}
+{% include speakers/who-are-the-gnome-speakers.html %}
 
 <section class="py-4 bg-light" id="team">
   <div class="container">
     <div class="row text-center d-flex justify-content-center">
       <div class="col-md-10 col-lg-7">
-        <h2 class="font-weight-light mb-3">{{ page.foundation.heading }}</h2>
-        <span class="text-muted">{{ page.foundation.description }}</span>
+        <h2 class="font-weight-light mb-3">{{ page.speakers.heading }}</h2>
+        <span class="text-muted">{{ page.speakers.description }}</span>
       </div>
     </div>
-    <div class="row d-flex justify-content-center pt-5 mx-auto">
+    <div class="row d-flex justify-content-center pt-5 mx-auto gnome-members-list">
       {% for member_hash in site.data.members %}
         {% assign member = member_hash[1] %}
         {% if member.badges contains 'speaker' %}
-          {% include sections/member-speaker.html %}
+          {% include sections/member-speaker.html member=member %}
         {% endif %}
       {% endfor %}
     </div>
@@ -51,7 +40,7 @@ foundation:
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <input aria-label="" type="text" class="form-control rounded-left gnome-members-filter"
-                 style="width: 300px; border-radius: 0;" placeholder="Search for a Speaker..."/>
+                 placeholder="Search for a Speaker..."/>
         </ul>
       </nav>
     </div>

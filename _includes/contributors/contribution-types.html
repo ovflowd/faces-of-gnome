@@ -1,0 +1,33 @@
+<section class="pt-3 pb-5" id="type_of_contributors">
+  <div class="container">
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-md-10 col-lg-7">
+        <h2 class="font-weight-light mb-3">{{ include.heading }}</h2>
+        <span class="text-muted">{{ include.description | markdownify }}</span>
+      </div>
+    </div>
+    <div class="row feature-holder pt-5 pb-3">
+      {% for type in include.list %}
+        <div class="col-md-6 px-3">
+          <div class="col d-flex px-0 px-sm-3 pb-4">
+            <div class="pr-2">
+                <span class="fa-stack fa-1x fa-fw d-flex justify-content-center align-items-center">
+                  <i class="fas fa-circle fa-stack-2x fa-fw text-primary text-center"></i>
+                  <i class="{{ type.icon }} fa-stack-1x fa-inverse fa-fw text-center"></i>
+                </span>
+            </div>
+            <div>
+              <h6 class="mb-1">{{ type.title }}</h6>
+              <span class="text-muted small">{{ type.description | markdownify }}</span>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <a href="https://wiki.gnome.org/Newcomers/" target="_blank"
+       class="d-flex py-3 px-3 text-decoration-none text-primary border rounded shadow-sm-hover bg-light-hover justify-content-between align-items-center mb-2">
+      Join our Community! Start contributing to GNOME!
+      <i class="fas fa-chevron-circle-right text-info"></i>
+    </a>
+  </div>
+</section>

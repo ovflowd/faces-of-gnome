@@ -2,19 +2,20 @@
 <script src="{{ '/assets/popper.js/dist/umd/popper.min.js' | prepend: site.url }}"></script>
 <script src="{{ '/assets/bootstrap/dist/js/bootstrap.min.js' | prepend: site.url }}"></script>
 <script>
-    var btnTop = $("#btn-go-to-top");
-    $(window).scroll(function() {
-        if ($(window).scrollTop() < 400) {
-            btnTop.addClass("d-none");
-        }
-        else {
-            btnTop.removeClass("d-none");
-        }
-    });
-    btnTop.on("click", function(e) {
-        e.preventDefault();
-        $("html, body").animate({scrollTop: 0});
-    });
+  const btnTop = $('#btn-go-to-top');
+
+  jQuery(window).scroll(function() {
+    if ($(window).scrollTop() < 400) {
+      btnTop.addClass('d-none');
+    } else {
+      btnTop.removeClass('d-none');
+    }
+  });
+
+  btnTop.on('click', function(e) {
+    e.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0});
+  });
 </script>
 <script>
   const gnomeMembers = jQuery('.gnome-member');
@@ -38,7 +39,7 @@
 
       jQuery(this).toggle(textSearchResult && maximumPageNumberResult && minimalPageNumberResult);
     });
-  }
+  };
 
   const showPage = (pagination) => {
     const element = jQuery(pagination);
@@ -53,7 +54,9 @@
   };
 
   for (let i = 1; i <= amountOfPages; i++) {
-    jQuery('.pagination').append(`<li class="page-item" style="cursor: pointer" onClick="showPage(this)"><span class="page-link">${i}</span></li>`)
+    jQuery('.pagination').
+        append(
+            `<li class="page-item" style="cursor: pointer" onClick="showPage(this)"><span class="page-link">${i}</span></li>`);
   }
 
   jQuery('.gnome-members-filter').on('keyup', function() {
@@ -65,4 +68,8 @@
   jQuery('.page-item').first().addClass('active');
 
   filterMethod();
+
+  if (amountOfContributors <= 0) {
+    jQuery('.gnome-members-list').append('<span class="text-muted"><strong>No entries found.</strong></span>');
+  }
 </script>

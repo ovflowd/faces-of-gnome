@@ -2,92 +2,55 @@
 navbar_type: dark
 permalink: ''
 
-page_main_heading: Faces of GNOME
-page_main_heading_description: These are the people that make GNOME possible.
-
-type_of_contributors_heading: A community driven by passion
-type_of_contributors_description: GNOME has all kind of people. They do all sort of things. Check out some of the things they do.
+heading: Faces of GNOME
+description: These are the people that make GNOME possible.
 
 contributors:
   heading: Everyone GNOME
   description: These are all the faces that make GNOME possible. What an amazing community!
 
 type_of_contributors:
-  - title: Designers
-    description: They design our components, apps, our guidelines and ensure GNOME look and feel high standards.
-    icon: fas fa-palette
-  - title: Developers
-    description: They deliver the pieces of code behind GNOME. They ship our Apps and the GNOME Desktop.
-    icon: fas fa-layer-group
-  - title: Translators
-    description: They make GNOME be understandable and usable to all people around the world.
-    icon: fas fa-language
-  - title: Documenter
-    description: They document and create guides of everything GNOME. From our GTK APIs to Newcomer guides.
-    icon: fas fa-drafting-compass
-  - title: Engagement
-    description: They manager our Communities, Conferences, Marketing and Events. They are the frontier of GNOME.
-    icon: fas fa-comments
-  - title: Moderators
-    description: They ensure our Communities are healthy and secure,
-    icon: fas fa-shield-alt
-  - title: Mentors
-    description: They manage and supervise student programs like Google Summer of Code and Outreachy.
-    icon: fas fa-graduation-cap
+  heading: A community driven by passion
+  description: GNOME has all kind of people. They do all sort of things. Check out some of the things they do.
+  list:
+    - title: Designers
+      description: They design our components, apps, our guidelines and ensure GNOME look and feel high standards.
+      icon: fas fa-palette
+    - title: Developers
+      description: They deliver the pieces of code behind GNOME. They ship our Apps and the GNOME Desktop.
+      icon: fas fa-layer-group
+    - title: Translators
+      description: They make GNOME be understandable and usable to all people around the world.
+      icon: fas fa-language
+    - title: Documenter
+      description: They document and create guides of everything GNOME. From our GTK APIs to Newcomer guides.
+      icon: fas fa-drafting-compass
+    - title: Engagement
+      description: They manager our Communities, Conferences, Marketing and Events. They are the frontier of GNOME.
+      icon: fas fa-comments
+    - title: Moderators
+      description: They ensure our Communities are healthy and secure,
+      icon: fas fa-shield-alt
+    - title: Mentors
+      description: They manage and supervise student programs like Google Summer of Code and Outreachy.
+      icon: fas fa-graduation-cap
+    - title: Staff
+      description: They handle the internals of the GNOME Foundation and ensure our Operations run smoothly.
+      icon: fas fa-id-badge
 ---
 
 {% include header.html %}
-
 {% include navbar.html %}
+{% include subheader.html
+  image='/assets/img/wall-contributors.svg'
+  heading=page.heading
+  description=page.description %}
 
-<section class="py-4 d-flex flex-column align-items-center bg-dark text-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 d-flex justify-content-end flex-column main-heading">
-        <h1 class="display-3 pb-3">{{ page.page_main_heading }}</h1>
-        <span class="text-info lead">{{ page.page_main_heading_description }}</span>
-      </div>
-      <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-contributors.svg' | prepend: site.url }}" class="img-fluid" alt="Contributors Wallpaper" />
-      </div>
-    </div>
-  </div>
-</section>
-
-{% include sections/contributors.html %}
-
-<section class="pt-3 pb-5" id="type_of_contributors">
-  <div class="container">
-    <div class="row text-center d-flex justify-content-center">
-      <div class="col-md-10 col-lg-7">
-        <h2 class="font-weight-light mb-3">{{ page.type_of_contributors_heading }}</h2>
-        <span class="text-muted">{{ page.type_of_contributors_description | markdownify }}</span>
-      </div>
-    </div>
-    <div class="row feature-holder pt-5">
-      {% for type in page.type_of_contributors %}
-        <div class="col-md-6 px-3">
-          <div class="col d-flex px-0 px-sm-3 pb-4">
-            <div class="pr-2">
-                <span class="fa-stack fa-1x fa-fw d-flex justify-content-center align-items-center">
-                  <i class="fas fa-circle fa-stack-2x fa-fw text-primary text-center"></i>
-                  <i class="{{ type.icon }} fa-stack-1x fa-inverse fa-fw text-center"></i>
-                </span>
-            </div>
-            <div>
-              <h6 class="mb-1">{{ type.title }}</h6>
-              <span class="text-muted small">{{ type.description | markdownify }}</span>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    <a href="https://wiki.gnome.org/Newcomers/" target="_blank"
-       class="d-flex py-3 px-3 text-decoration-none text-primary border rounded shadow-sm-hover bg-light-hover justify-content-between align-items-center mb-2">
-      Join our Community! Start contributing to GNOME!<i class="fas fa-chevron-circle-right text-info"></i>
-    </a>
-  </div>
-</section>
+{% include contributors/who-makes-gnome-possible.html %}
+{% include contributors/contribution-types.html
+  heading=page.type_of_contributors.heading
+  description=page.type_of_contributors.description
+  list=page.type_of_contributors.list %}
 
 <section class="py-4 bg-light" id="team">
   <div class="container">
@@ -98,16 +61,17 @@ type_of_contributors:
         <span class="text-muted">{{ page.contributors.description }}</span>
       </div>
     </div>
-    <div class="row d-flex justify-content-center pt-5 mx-auto">
+    <div class="row d-flex justify-content-center pt-5 mx-auto gnome-members-list">
       {% for member_hash in site.data.members %}
         {% assign member = member_hash[1] %}
-        {% include sections/member.html %}
+        {% include sections/member.html member=member %}
       {% endfor %}
     </div>
     <div class="row d-flex justify-content-center pt-3 mx-auto">
       <nav aria-label="Page navigation example">
         <ul class="pagination">
-          <input aria-label="" type="text" class="form-control rounded-left gnome-members-filter" style="width: 300px; border-radius: 0;" placeholder="Search for a GNOMie..."/>
+          <input aria-label="" type="text" class="form-control rounded-left gnome-members-filter"
+                 placeholder="Search for a GNOMie..."/>
         </ul>
       </nav>
     </div>

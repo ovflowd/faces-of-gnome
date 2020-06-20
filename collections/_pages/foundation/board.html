@@ -2,8 +2,8 @@
 navbar_type: dark
 permalink: '/foundation/board'
 
-page_main_heading: GNOME Board of Directors
-page_main_heading_description: The leaders of the GNOME Foundation
+heading: GNOME Board of Directors
+description: The leaders of the GNOME Foundation
 
 foundation:
   heading: Current Board of Directors
@@ -12,23 +12,12 @@ foundation:
 
 {% include header.html %}
 {% include navbar.html %}
+{% include subheader.html
+  image='/assets/img/wall-community.svg'
+  heading=page.heading
+  description=page.description %}
 
-<section class="py-4 d-flex flex-column align-items-center bg-dark text-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 d-flex justify-content-end flex-column main-heading">
-        <h1 class="display-3 pb-3">{{ page.page_main_heading }}</h1>
-        <span class="text-info lead">{{ page.page_main_heading_description }}</span>
-      </div>
-      <div class="col-md-7 d-none d-md-flex justify-content-center align-items-center flex-column">
-        <img src="{{ '/assets/img/wall-community.svg' | prepend: site.url }}" class="img-fluid"
-             alt="Maintaers Wallpaper"/>
-      </div>
-    </div>
-  </div>
-</section>
-
-{% include sections/foundation-board.html %}
+{% include foundation/who-are-the-board-of-directors.html %}
 
 <section class="py-4 bg-light" id="team">
   <div class="container">
@@ -38,11 +27,11 @@ foundation:
         <span class="text-muted">{{ page.foundation.description }}</span>
       </div>
     </div>
-    <div class="row d-flex justify-content-center pt-5 mx-auto">
+    <div class="row d-flex justify-content-center pt-5 mx-auto gnome-members-list">
       {% for member_hash in site.data.members %}
         {% assign member = member_hash[1] %}
         {% if member.active == true and member.badges contains 'foundation-board' %}
-          {% include sections/member.html %}
+          {% include sections/member.html member=member %}
         {% endif %}
       {% endfor %}
     </div>
