@@ -19,5 +19,35 @@
     "maintainers": [
       "claudio-wunder"
     ]
+  },
+  {
+    "id": "gnome-clocks",
+    "name": "GNOME Clocks",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-clocks/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.clocks.svg",
+    "description": "Clocks for world times, plus alarms, stopwatch and a timer",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-clocks/",
+    "maintainers": [
+      "zander-brown"
+    ]
+  },
+  {
+    "id": "dia",
+    "name": "Dia Diagram Editor",
+    "icon": "https://gitlab.gnome.org/GNOME/dia/-/raw/master/logo.png",
+    "description": "Dia is a program for drawing diagrams",
+    "repository": "https://gitlab.gnome.org/GNOME/dia/",
+    "maintainers": [
+      "zander-brown"
+    ]
+  },
+  {
+    "id": "palette",
+    "name": "Palette",
+    "icon": "https://gitlab.gnome.org/World/design/palette/-/raw/master/logo.png",
+    "description": "Colour Palette tool",
+    "repository": "https://gitlab.gnome.org/World/design/palette",
+    "maintainers": [
+      "zander-brown"
+    ]
   }
 ]

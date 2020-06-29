@@ -13,5 +13,10 @@
     "id": "blog",
     "base": "",
     "icon": "fa fa-globe-americas"
+  },
+  {
+    "id": "matrix",
+    "base": "https://matrix.to/#/",
+    "icon": "fa fa-comments"
   }
 ]

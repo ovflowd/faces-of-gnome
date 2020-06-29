@@ -40,5 +40,12 @@
     "class": "small badge",
     "icon": "fas fa-comment",
     "link": "https://events.gnome.org"
+  },
+  {
+    "id": "translator",
+    "name": "Translator",
+    "class": "small badge",
+    "icon": "fas fa-globe",
+    "link": "https://l10n.gnome.org/"
   }
 ]
