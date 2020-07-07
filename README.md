@@ -4,7 +4,7 @@ The source for the [The Faces of GNOME](https://contributors.gnome.org)
 
 ## About
 
-Contributors is a web site that lists and indexes all the past and current Contributors of GNOME.
+Contributors is a website that contains lists and indexes of all the past and current Contributors of GNOME.
 The site is developed with
 and maintained using [Jekyll][official-jekyll], a Static Site Generator
 developed with Ruby. The site uses following types of files for the content
@@ -66,20 +66,20 @@ The data used by the site is stored in the form of following files:
 
 ## Adding yourself to the Website
 
-Just create a new YAML file on `_data/members/` directory containing the following entries. You may also give a look on [this template](_data/member-template.yml)
+Create a new YAML file on `_data/members/` directory containing the following entries. You can also loook at [this template](_data/member-template.yml)
 
 | Field         | Description                                       | Example                 | Type                                                    |
 | ------------- |:-------------------------------------------------:| -----------------------:| ------------------------------------------------------- |
-| name          | Your name                                         | John Smith              | string                                                  |
-| avatar        | Your Avatar Image                                 | https://imgur.com/image | string/boolean                                          |
-| title         | Your current position at the GNOME Project        | Community Manager       | string                                                  |
-| badges        | All the badges/roles you held at GNOME/Foundation | `['engagement-team']`   | array:entries from `badges.json`                        |
-| active        | If you're a current/active GNOME Contributor      | `true`                  | boolean                                                 |
-| projects      | The Projects/Repositories you're working on       | `['gtk']`               | array:entries from `projects.json`                      |
-| conferences   | The Conferences you participated                  | `['guadec-2018']`       | array:entries from `events.json`                        |
-| social        | Social Networks that you have                     | `{'twitter': 'handle'}` | collection:key from `social_networks.json`;value:string |
+| Name          | Your name                                         | John Smith              | string                                                  |
+| Avatar        | Your Avatar Image                                 | https://imgur.com/image | string/boolean                                          |
+| Position      | Your current position at the GNOME Project        | Community Manager       | string                                                  |
+| Badges        | All the badges/roles you held at GNOME/Foundation | `['engagement-team']`   | array:entries from `badges.json`                        |
+| Status        | If you're a current/active GNOME Contributor      | `true`                  | boolean                                                 |
+| Projects      | The Projects/Repositories you're working on       | `['gtk']`               | array:entries from `projects.json`                      |
+| Conferences   | The Conferences you participated in               | `['guadec-2018']`       | array:entries from `events.json`                        |
+| Socials        | Social media handles                             | `{'twitter': 'handle'}` | collection:key from `social_networks.json`;value:string |
 
-Then just add a new entry and commit the changes with a **Merge Request**. It will be approved if it's correct.
+After this, add a new entry and commit the changes with a **Merge Request**. If details are filled in correctly, it will be approved.
 
 ## Add Custom Badges/Social Networks and Projects
 
@@ -145,7 +145,7 @@ the other hand is performed only on `master` branch.
 
 This project is an open source project with a contributor community that spans across
 the globe. We want everyone in our community to feel safe and encourage the
-participation of people from all forms of backgrounds, regardless of
+participation of people from all backgrounds, regardless of
 experience level, age, gender, identity, race, religion, or nationality.  We
 expect all contributors to uphold the [Code of Conduct][code-of-conduct].
 

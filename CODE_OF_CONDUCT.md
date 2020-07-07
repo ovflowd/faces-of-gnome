@@ -4,7 +4,7 @@
 
 GNOME creates software for a better world. We achieve this by behaving well towards each other.
 
-Therefore this document suggests what we consider ideal behaviour, so you know what to expect when getting involved in GNOME. This is who we are and what we want to be. There is no official enforcement of these principles, and this should not be interpreted like a legal document.
+Therefore this document suggests what we consider ideal behaviour, so you know the right practices getting involved in GNOME. This is who we are and what we want to be. There is no official enforcement of these principles, and this should not be interpreted like a legal document.
 
 ### Advice
 
@@ -18,7 +18,7 @@ Therefore this document suggests what we consider ideal behaviour, so you know w
 * Try to be concise:
   * Avoid repeating what has been said already. Making a conversation larger makes it difficult to follow, and people often feel personally attacked if they receive multiple messages telling them the same thing.
 
-### Applies to
+### This applies to:
 
 * [GNOME Bugzilla](http://bugzilla.gnome.org/)
 * [GNOME mailing lists](http://mail.gnome.org/)
