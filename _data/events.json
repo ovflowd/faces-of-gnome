@@ -1,5 +1,30 @@
 [
   {
+    "id": "guadec-2013",
+    "name": "GUADEC 2013",
+    "link": "https://2013.guadec.org/"
+  },
+  {
+    "id": "guadec-2014",
+    "name": "GUADEC 2014",
+    "link": "https://2014.guadec.org/"
+  },
+  {
+    "id": "guadec-2015",
+    "name": "GUADEC 2015",
+    "link": "https://2015.guadec.org/"
+  },
+  {
+    "id": "guadec-2016",
+    "name": "GUADEC 2016",
+    "link": "https://2016.guadec.org/"
+  },
+  {
+    "id": "guadec-2017",
+    "name": "GUADEC 2017",
+    "link": "https://2017.guadec.org/"
+  },
+  {
     "id": "guadec-2018",
     "name": "GUADEC 2018",
     "link": "https://2018.guadec.org"
@@ -8,5 +33,216 @@
     "id": "guadec-2019",
     "name": "GUADEC 2019",
     "link": "https://2019.guadec.org"
+  },
+  {
+    "id": "gnsummit-2016",
+    "name": "GNOME Montréal Summit 2016",
+    "link": "https://wiki.gnome.org/Events/Summit/2016"
+  },
+  {
+    "id": "gnsummit-2015",
+    "name": "GNOME Summit 2015",
+    "link": "https://wiki.gnome.org/Events/Summit/2015"
+  },
+  {
+    "id": "gnsummit-2014",
+    "name": "GNOME Summit 2014",
+    "link": "https://wiki.gnome.org/Events/Summit/2014"
+  },
+  {
+    "id": "gnsummit-2013",
+    "name": "GNOME Montreal Summit 2013",
+    "link": "https://wiki.gnome.org/Events/Summit/2013"
+  },
+  {
+    "id": "gnsummit-2012",
+    "name": "GNOME Boston Summit 2012",
+    "link": "https://wiki.gnome.org/Events/Summit/2012"
+  },
+  {
+    "id": "gnsummit-2011",
+    "name": "GNOME Montréal Summit 2011",
+    "link": "https://wiki.gnome.org/Events/Summit/2011"
+  },
+  {
+    "id": "gnsummit-2010",
+    "name": "GNOME Boston Summit 2010",
+    "link": "https://wiki.gnome.org/Events/Summit/2010"
+  },
+  {
+    "id": "gnsummit-2009",
+    "name": "GNOME Boston Summit 2009",
+    "link": "https://wiki.gnome.org/Events/Summit/2009"
+  },
+  {
+    "id": "gnsummit-2008",
+    "name": "GNOME Boston Summit 2008",
+    "link": "https://wiki.gnome.org/Events/Summit/2008"
+  },
+  {
+    "id": "gnsummit-2007",
+    "name": "GNOME Boston Summit 2007",
+    "link": "https://wiki.gnome.org/Events/Summit/2007"
+  },
+  {
+    "id": "gnsummit-2006",
+    "name": "GNOME Boston Summit 2006",
+    "link": "https://wiki.gnome.org/Events/Summit/2006"
+  },
+  {
+    "id": "gnsummit-2005",
+    "name": "GNOME Boston Summit 2005",
+    "link": "https://wiki.gnome.org/Events/Summit/2005"
+  },
+  {
+    "id": "gnsummit-2004",
+    "name": "GNOME Boston Summit 2004",
+    "link": "https://wiki.gnome.org/Events/Summit/2004"
+  },
+  {
+    "id": "pags-2020",
+    "name": "PAN AFRICAN GNOME SUMMIT 2020",
+    "link": "https://events.gnome.org/event/6/"
+  },
+  {
+    "id": "libreplanet-2020",
+    "name": "LIBREPLANET 2020",
+    "link": "https://libreplanet.org/2020/"
+  },
+  {
+    "id": "scale18x-2020",
+    "name": "Scalw 18X 2020",
+    "link": "https://www.socallinuxexpo.org/scale/18x"
+  },
+  {
+    "id": "fosdem-2020",
+    "name": "FOSDEM 2020",
+    "link": "https://wiki.gnome.org/Events/FOSDEM/2020"
+  },
+  {
+    "id": "fosdem-2019",
+    "name": "FOSDEM 2019",
+    "link": "https://wiki.gnome.org/Events/FOSDEM/2019"
+  },
+  {
+    "id": "fosdem-2018",
+    "name": "FOSDEM 2018",
+    "link": "https://wiki.gnome.org/Events/FOSDEM/2018"
+  },
+  {
+    "id": "fosdem-2017",
+    "name": "FOSDEM 2017",
+    "link": "https://wiki.gnome.org/Events/FOSDEM/2017"
+  },
+  {
+    "id": "fosdem-2016",
+    "name": "FOSDEM 2016",
+    "link": "https://wiki.gnome.org/Events/FOSDEM/2016"
+  },
+  {
+    "id": "fosdem-2015",
+    "name": "FOSDEM 2015",
+    "link": "https://wiki.gnome.org/Events/FOSDEM/2015"
+  },
+  {
+    "id": "fosdem-2014",
+    "name": "FOSDEM 2014",
+    "link": "https://wiki.gnome.org/Events/FOSDEM/2014"
+  },
+  {
+    "id": "fosdem-2013",
+    "name": "FOSDEM 2013",
+    "link": "https://wiki.gnome.org/Events/FOSDEM/2013"
+  },
+  {
+    "id": "fosdem-2012",
+    "name": "FOSDEM 2012",
+    "link": "https://wiki.gnome.org/Events/FOSDEM/2012"
+  },
+  {
+    "id": "fosdem-2010",
+    "name": "FOSDEM 2010",
+    "link": "https://wiki.gnome.org/Events/Brussels2010"
+  },
+  {
+    "id": "fosdem-2009",
+    "name": "FOSDEM 2009",
+    "link": "https://wiki.gnome.org/Events/Brussels2009"
+  },
+  {
+    "id": "fosdem-2008",
+    "name": "FOSDEM 2008",
+    "link": "https://wiki.gnome.org/Events/Brussels2008"
+  },
+  {
+    "id": "fosdem-2007",
+    "name": "FOSDEM 2007",
+    "link": "https://wiki.gnome.org/Events/Brussels2007"
+  },
+  {
+    "id": "fosdem-2006",
+    "name": "FOSDEM 2006",
+    "link": "https://wiki.gnome.org/Events/Brussels2006"
+  },
+  {
+    "id": "fnorth-2020",
+    "name": "Foss-North 2020",
+    "link": "https://foss-north.se/2020/"
+  },
+  {
+    "id": "gasummit-2008",
+    "name": "GNOME.Asia Summit 2008",
+    "link": "http://2008.gnome.asia/en/"
+  },
+  {
+    "id": "gasummit-2009",
+    "name": "GNOME.Asia Summit 2009",
+    "link": "https://wiki.gnome.org/GnomeAsia/2009"
+  },
+  {
+    "id": "gasummit-2011",
+    "name": "GNOME.Asia Summit 2011",
+    "link": "https://wiki.gnome.org/GnomeAsia/2011Summit"
+  },
+  {
+    "id": "gasummit-2012",
+    "name": "GNOME.Asia Summit 2012",
+    "link": "https://wiki.gnome.org/GnomeAsia/2012Summit"
+  },
+  {
+    "id": "gasummit-2013",
+    "name": "GNOME.Asia Summit 2013",
+    "link": "https://wiki.gnome.org/GnomeAsia/2013Summit"
+  },
+  {
+    "id": "gasummit-2014",
+    "name": "GNOME.Asia Summit 2014",
+    "link": "https://wiki.gnome.org/GnomeAsia/2014Summit"
+  },
+  {
+    "id": "gasummit-2015",
+    "name": "GNOME.Asia Summit 2015",
+    "link": "https://wiki.gnome.org/GnomeAsia/2015Summit"
+  },
+  {
+    "id": "gasummit-2016",
+    "name": "GNOME.Asia Summit 2016",
+    "link": "https://wiki.gnome.org/GnomeAsia/2016Summit"
+  },
+  {
+    "id": "gasummit-2017",
+    "name": "GNOME.Asia Summit 2017",
+    "link": "https://wiki.gnome.org/GnomeAsia/2017Summit"
+  },
+  {
+    "id": "gasummit-2018",
+    "name": "GNOME.Asia Summit 2018",
+    "link": "https://wiki.gnome.org/GnomeAsia/2018Summit"
+  },
+  {
+    "id": "gasummit-2019",
+    "name": "GNOME.Asia Summit 2019",
+    "link": "https://wiki.gnome.org/GnomeAsia/2019Summit"
   }
+  
 ]
