@@ -5,7 +5,7 @@ badges:
   - contributor  
 active: true
 projects:
-  - Faces of GNOME
+  - gnome-contributors
   - Scalable Onboarding
 social:
   blog: https://ruthie.hashnode.dev
