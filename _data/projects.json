@@ -49,5 +49,492 @@
     "maintainers": [
       "zander-brown"
     ]
+  },
+  {
+    "id": "gnome-shell",
+    "name": "GNOME Shell",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-shell/-/raw/master/subprojects/extensions-app/logo.png",
+    "description": "Provides core user interface functions for the GNOME 3 desktop, like switching to windows and launching applications",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-shell",
+    "maintainers": [
+      "Florian Müllner",
+      "Georges Basile Stavracas Neto"
+    ]
+  },
+  {
+    "id": "gtk",
+    "name": "GTK — The GTK toolkit",
+    "icon": "https://gitlab.gnome.org/GNOME/gtk/-/raw/master/gtk/inspector/logo.png",
+    "description": "Creates graphical user interfaces",
+    "repository": "https://gitlab.gnome.org/GNOME/gtk",
+    "maintainers": [
+      "Matthias Clasen"
+    ]
+  },
+  {
+    "id": "epiphany",
+    "name": "GNOME Web",
+    "icon": "https://gitlab.gnome.org/GNOME/epiphany/-/raw/master/help/C/media/epiphany-icon.png",
+    "description": " A GNOME web browser based on the WebKit rendering engine",
+    "repository": "https://gitlab.gnome.org/GNOME/epiphany",
+    "maintainers": [
+      "Carlos Garcia Campos",
+      "Jan-Michael Brummer",
+      "Michael Catanzaro"
+    ]
+  },
+  {
+    "id": "nautilus",
+    "name": "Nautilus",
+    "icon": "https://gitlab.gnome.org/GNOME/nautilus/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Nautilus.svg",
+    "description": "File manager for GNOME",
+    "repository": "https://gitlab.gnome.org/GNOME/nautilus",
+    "maintainers": [
+      "António Fernandes",
+      "Ondrej Holy"
+    ]
+  },
+  {
+    "id": "eog",
+    "name": "Eye of GNOME",
+    "icon": "https://gitlab.gnome.org/GNOME/eog/-/raw/master/data/icons/scalable/apps/org.gnome.eog.svg",
+    "description": "An image viewing and cataloging program",
+    "repository": "https://gitlab.gnome.org/GNOME/eog",
+    "maintainers": [
+      "Felix Riemann"
+    ]
+  },
+  {
+    "id": "cheese",
+    "name": "Cheese",
+    "icon": "https://gitlab.gnome.org/GNOME/cheese/-/raw/master/data/icons/scalable/org.gnome.Cheese.svg",
+    "description": "A Webcam application for taking photos and videos",
+    "repository": "https://gitlab.gnome.org/GNOME/cheese",
+    "maintainers": [
+      "David King"
+    ]
+  },
+  {
+    "id": "gedit",
+    "name": "GEdit - The GNOME text editor",
+    "icon": "https://gitlab.gnome.org/GNOME/gedit/-/raw/master/logo.png",
+    "description": "The text editor of the GNOME desktop environment",
+    "repository": "https://gitlab.gnome.org/GNOME/gedit",
+    "maintainers": [
+      "Sébastien Wilmet"
+    ]
+  },
+  {
+    "id": "gnome-documents",
+    "name": "GNOME Documents",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-documents/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Documents.svg",
+    "description": "Document manager application",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-documents",
+    "maintainers": [
+      "Christopher Davis"
+    ]
+  },
+  {
+    "id": "gnome-commander",
+    "name": "Gnome Commander",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-commander/-/raw/master/logo.png",
+    "description": "A two-pane graphical file manager",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-commander",
+    "maintainers": [
+      "Uwe Scholz"
+    ]
+  },
+  {
+    "id": "geary",
+    "name": "Geary",
+    "icon": "https://gitlab.gnome.org/GNOME/geary/-/raw/mainline/icons/hicolor/scalable/apps/org.gnome.Geary.svg",
+    "description": "Email application",
+    "repository": "https://gitlab.gnome.org/GNOME/geary",
+    "maintainers": [
+      "Michael Gratton"
+    ]
+  },
+  {
+    "id": "libhandy",
+    "name": "Handy",
+    "icon": "https://gitlab.gnome.org/uploads/-/system/project/avatar/11489/libhandy.png",
+    "description": "Library for mobile UI development using GTK/GNOME",
+    "repository": "https://gitlab.gnome.org/GNOME/libhandy",
+    "maintainers": [
+      "Adrien Plazas",
+      "Guido Günther"
+    ]
+  },
+  {
+    "id": "shotwell",
+    "name": "Shotwell",
+    "icon": "https://gitlab.gnome.org/GNOME/shotwell/-/raw/master/help/C/figures/shotwell_logo.png",
+    "description": "Photo manager",
+    "repository": "https://gitlab.gnome.org/GNOME/shotwell",
+    "maintainers": [
+      "David Welch",
+      "Jens Georg"
+    ]
+  },
+  {
+    "id": "totem",
+    "name": "Totem",
+    "icon": "https://gitlab.gnome.org/GNOME/totem/-/raw/master/data/icons/scalable/org.gnome.Totem.svg",
+    "description": "Movie player for the GNOME desktop based on GStreamer",
+    "repository": "https://gitlab.gnome.org/GNOME/totem",
+    "maintainers": [
+      "Bastien Nocera",
+      "Tim-Philipp Müller"
+    ]
+  },
+  {
+    "id": "buoh",
+    "name": "Buoh",
+    "icon": "https://gitlab.gnome.org/GNOME/buoh/-/raw/master/data/icons/64x64/buoh.png",
+    "description": "A reader for online comic strips",
+    "repository": "https://gitlab.gnome.org/GNOME/buoh",
+    "maintainers": [
+      "Jan Tojnar"
+    ]
+  },
+  {
+    "id": "subtitles",
+    "name": "Subtitles",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-subtitles/-/raw/master/data/gnome-subtitles-logo.png",
+    "description": "Subtitle editor for the GNOME desktop",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-subtitles",
+    "maintainers": [
+      "Pedro Castro"
+    ]
+  },
+  {
+    "id": "almanah",
+    "name": "Almanah",
+    "icon": "https://gitlab.gnome.org/GNOME/almanah/-/raw/master/data/icons/48x48/almanah.svg",
+    "description": "Diary",
+    "repository": "https://gitlab.gnome.org/GNOME/almanah",
+    "maintainers": [
+      "Álvaro Peña",
+      "Philip Withnall"
+    ]
+  },
+  {
+    "id": "postr",
+    "name": "Postr",
+    "icon": "https://gitlab.gnome.org/GNOME/postr/-/raw/master/data/32x32/postr.svg",
+    "description": "Tool for uploading pictures to Flickr",
+    "repository": "https://gitlab.gnome.org/GNOME/postr",
+    "maintainers": [
+      "Germán Poo-Caamaño"
+    ]
+  },
+  {
+    "id": "gnome-weather",
+    "name": "Weather",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-weather/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Weather.svg",
+    "description": "Weather App for monitoring current weather conditions",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-weather",
+    "maintainers": [
+      "Vitaly Dyachkov"
+    ]
+  },
+  {
+    "id": "gnome-2048",
+    "name": "2048",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-2048/-/raw/master/data/icons/org.gnome.TwentyFortyEight.svg",
+    "description": "Game for GNOME",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-2048",
+    "maintainers": [
+      "Arnaud B."
+    ]
+  },
+  {
+    "id": "gnome-backgrounds",
+    "name": "GNOME Backgrounds",
+    "icon": "https://gitlab.gnome.org/uploads/-/system/project/avatar/1660/gnome-backgrounds-avatar.png",
+    "description": "Default wallpaper set for GNOME",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-backgrounds",
+    "maintainers": [
+      ""
+    ]
+  },
+  {
+    "id": "pybliographer",
+    "name": "Pybliographer",
+    "icon": "https://gitlab.gnome.org/GNOME/pybliographer/-/raw/master/data/icons/scalable/pybliographic.svg",
+    "description": "A framework for working with bibliographic databases",
+    "repository": "https://gitlab.gnome.org/GNOME/pybliographer",
+    "maintainers": [
+      "Germán Poo-Caamaño"
+    ]
+  },
+  {
+    "id": "gthumb",
+    "name": "gThumb",
+    "icon": "https://gitlab.gnome.org/GNOME/gthumb/-/raw/master/data/icons/source/gthumb.svg",
+    "description": "Image viewer and browser",
+    "repository": "https://gitlab.gnome.org/GNOME/gthumb",
+    "maintainers": [
+      "Paolo Bacchilega"
+    ]
+  },
+  {
+    "id": "network-manager-applet",
+    "name": "Network Manager Applet",
+    "icon": "https://gitlab.gnome.org/uploads/-/system/project/avatar/1615/preferences-system-network-symbolic.symbolic.png",
+    "description": "Tray applet and an advanced network connection editor",
+    "repository": "https://gitlab.gnome.org/GNOME/network-manager-applet",
+    "maintainers": [
+      "Antonio Cardace",
+      "Beniamino Galvani",
+      "Dan Williams",
+      "Francesco Giudici",
+      "Lubomir Rintel",
+      "Thomas Haller"
+    ]
+  },
+  {
+    "id": "gnome-font-viewer",
+    "name": "GNOME Fonts",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.font-viewer.svg",
+    "description": "Application to view fonts on your system",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-font-viewer",
+    "maintainers": [
+      "Cosimo Cecchi"
+    ]
+  },
+  {
+    "id": "baobab",
+    "name": "Baobab",
+    "icon": "https://gitlab.gnome.org/GNOME/baobab/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.baobab.svg",
+    "description": "GNOME Disk Usage Analyzer",
+    "repository": "https://gitlab.gnome.org/GNOME/baobab",
+    "maintainers": [
+      "Paolo Borelli",
+      "Stefano Facchini"
+    ]
+  },
+  {
+    "id": "seahorse",
+    "name": "Seahorse",
+    "icon": "https://gitlab.gnome.org/GNOME/seahorse/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.seahorse.Application.svg",
+    "description": "A password and encryption key manager for GNOME",
+    "repository": "https://gitlab.gnome.org/GNOME/seahorse",
+    "maintainers": [
+      "Daiki Ueno",
+      "Niels De Graef"
+    ]
+  },
+  {
+    "id": "vala",
+    "name": "Vala",
+    "icon": "https://gitlab.gnome.org/uploads/-/system/project/avatar/1551/400x400.jpg",
+    "description": "Programming language making available modern programming language features to GNOME developers, eliminating additional runtime requirements and without using a different ABI compared to applications and libraries",
+    "repository": "https://gitlab.gnome.org/GNOME/vala",
+    "maintainers": [
+      "Al Thomas",
+      "Florian Brosch",
+      "Jürg Billeter",
+      "Rico Tzschichholz"
+    ]
+  },
+  {
+    "id": "gnome-sound-recorder",
+    "name": "Sound Recorder",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-sound-recorder/-/raw/master/data/icons/org.gnome.SoundRecorder.svg",
+    "description": "Desktop sound recorder",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-sound-recorder",
+    "maintainers": [
+      "Bilal Elmoussaoui",
+      "Christopher Davis",
+      "Felipe Borges",
+      "Meg Ford"
+    ]
+  },
+  {
+    "id": "rygel",
+    "name": "Rygel",
+    "icon": "https://gitlab.gnome.org/GNOME/rygel/-/raw/master/data/icons/scalable/rygel.svg",
+    "description": "Home media solution for sharing audio, video and pictures to other devices",
+    "repository": "https://gitlab.gnome.org/GNOME/rygel",
+    "maintainers": [
+      "Jens Georg"
+    ]
+  },
+  {
+    "id": "chrome-gnome-shell",
+    "name": "GNOME Shell integration for Chrome",
+    "icon": "https://gitlab.gnome.org/GNOME/chrome-gnome-shell/-/raw/master/extension/icons/GnomeLogo-128.png",
+    "description": "Browser extension for Google Chrome/Chromium, Firefox, Vivaldi, Opera, etc.",
+    "repository": "https://gitlab.gnome.org/GNOME/chrome-gnome-shell",
+    "maintainers": [
+      "Yuri Konotopov"
+    ]
+  },
+  {
+    "id": "gnome-calculator",
+    "name": "Calculator",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-calculator/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Calculator.svg",
+    "description": "Calculator for solving mathematical equations",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-calculator",
+    "maintainers": [
+      "Alberto Ruiz",
+      "Robert Roth"
+    ]
+  },
+  {
+    "id": "gnome-mines",
+    "name": "GNOME Mines",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-mines/-/raw/master/data/icons/hicolor/scalable/org.gnome.Mines.svg",
+    "description": "Puzzle game",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-mines",
+    "maintainers": [
+      "Robert Roth"
+    ]
+  },
+  {
+    "id": "gnome-contacts",
+    "name": "GNOME Contacts",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-contacts/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Contacts.svg",
+    "description": "Contacts manager for GNOME",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-contacts",
+    "maintainers": [
+      "Niels De Graef"
+    ]
+  },
+  {
+    "id": "gnome-boxes",
+    "name": "GNOME Boxes",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-boxes/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Boxes.svg",
+    "description": "A simple GNOME 3 application to access remote or virtual systems",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-boxes",
+    "maintainers": [
+      "Alexander Larsson",
+      "Felipe Borges",
+      "Zeeshan Ali"
+    ]
+  },
+  {
+    "id": "gnome-builder",
+    "name": "Builder",
+    "icon": "https://gitlab.gnome.org/uploads/-/system/project/avatar/426/builder.png",
+    "description": "IDE for writing GNOME-based softwares",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-builder",
+    "maintainers": [
+      "Christian Hergert",
+      "Sébastien Lafargue"
+    ]
+  },
+  {
+    "id": "meld",
+    "name": "Meld",
+    "icon": "https://gitlab.gnome.org/GNOME/meld/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Meld.svg",
+    "description": "Meld is a visual diff and merge tool targeted at developers. It helps users to compare files, directories, and version controlled projects",
+    "repository": "https://gitlab.gnome.org/GNOME/meld",
+    "maintainers": [
+      "Kai Willadsen"
+    ]
+  },
+  {
+    "id": "gnome-multi-writer",
+    "name": "GNOME MultiWriter",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-multi-writer/-/raw/master/data/icons/gnome-multi-writer.svg",
+    "description": "Write an ISO file to multiple USB devices at once",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-multi-writer",
+    "maintainers": [
+      "Richard Hughes"
+    ]
+  },
+  {
+    "id": "gnome-calendar",
+    "name": "GNOME Calendar",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-calendar/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Calendar.svg",
+    "description": "Calendar application for GNOME",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-calendar",
+    "maintainers": [
+      "Felipe Augusto",
+      "Georges Basile Stavracas Neto",
+      "George Willian Condomitti",
+      "Isaac Ferreira Filho",
+      "Thiago"
+    ]
+  },
+  {
+    "id": "fractal",
+    "name": "Fractal",
+    "icon": "https://gitlab.gnome.org/GNOME/fractal/-/raw/master/fractal-gtk/res/icons/hicolor/scalable/apps/org.gnome.Fractal.svg",
+    "description": "Matrix group messaging app",
+    "repository": "https://gitlab.gnome.org/GNOME/fractal",
+    "maintainers": [
+      "Christopher Davis",
+      "Daniel Garcia Moreno",
+      "Eisha Chen-yen-su",
+      "mairandomness",
+      "Sonja Heinze"
+    ]
+  },
+  {
+    "id": "gnome-todo",
+    "name": "GNOME To Do",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-todo/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Todo.svg",
+    "description": "An intuitive and powerful application to manage your personal tasks",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-todo",
+    "maintainers": [
+      "Georges Basile Stavracas Neto"
+    ]
+  },
+  {
+    "id": "gjs",
+    "name": "JavaScript bindings for GNOME",
+    "icon": "https://gitlab.gnome.org/uploads/-/system/project/avatar/106/jsgnome.png",
+    "description": "GNOME Javascript bindings",
+    "repository": "https://gitlab.gnome.org/GNOME/gjs",
+    "maintainers": [
+      "Cosimo Cecchi",
+      "Giovanni Campagna",
+      "Philip Chimento"
+    ]
+  },
+  {
+    "id": "gnome-usage",
+    "name": "GNOME Usage",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-usage/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Usage.svg",
+    "description": "GNOME Usage displays information about use of system resources",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-usage",
+    "maintainers": [
+      "Adrien Plazas",
+      "Petr Štětka"
+    ]
+  },
+  {
+    "id": "polari",
+    "name": "Polari",
+    "icon": "https://gitlab.gnome.org/GNOME/polari/-/raw/master/data/icons/hicolor/scalable/apps/org.gnome.Polari.svg",
+    "description": "Polari is a simple IRC Client that is designed to integrate seamlessly with GNOME 3",
+    "repository": "https://gitlab.gnome.org/GNOME/polari",
+    "maintainers": [
+      "Florian Müllner"
+    ]
+  },
+  {
+    "id": "gnome-keysign",
+    "name": "GNOME Keysign",
+    "icon": "https://gitlab.gnome.org/GNOME/gnome-keysign/-/raw/master/data/org.gnome.Keysign.svg",
+    "description": "An tool to sign OpenPGP keys over the local network",
+    "repository": "https://gitlab.gnome.org/GNOME/gnome-keysign",
+    "maintainers": [
+      "Ludovico de Nittis",
+      "Tobias Mueller"
+    ]
+  },
+  {
+    "id": "json-glib",
+    "name": "JSON-GLib",
+    "icon": "https://gitlab.gnome.org/uploads/-/system/project/avatar/4/json-glib-logo.png",
+    "description": "JSON-GLib implements a full JSON parser and generator using GLib and GObject, and integrates JSON with GLib data types",
+    "repository": "https://gitlab.gnome.org/GNOME/json-glib",
+    "maintainers": [
+      "Emmanuele Bassi"
+    ]
   }
 ]
