@@ -1,0 +1,31 @@
+---
+name: Florian Müllner
+avatar: https://www.gravatar.com/avatar/804e555ab944a4cd0388ef1d7842219f
+title: Certified GNOMIE
+badges:
+  - contributor
+  - maintainer
+  - foundation
+  - speaker
+active: true
+projects:
+  - gnome-shell
+  - gnome-shell-extensions
+  - mutter
+  - polari
+conferences:
+  - guadec-2013
+  - guadec-2014
+  - guadec-2015
+  - guadec-2016
+  - guadec-2017
+  - guadec-2018
+  - guadec-2019
+  - fosdem-2020
+  - fosdem-2019
+  - fosdem-2018
+  - fosdem-2016
+social:
+  blog: https://blogs.gnome.org/fmuellner
+  twitter: FMMuellner
+  gitlab: fmuellner
