@@ -13,6 +13,3 @@ do
     rsync -a node_modules/${dependency} assets
     echo "Moved ${dependency} to assets/ folder"
 done
-
-# script for compiling scss to css
-npm run compile-sass
