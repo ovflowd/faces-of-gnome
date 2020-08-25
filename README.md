@@ -108,6 +108,9 @@ $ bundle exec jekyll serve
 ```
 6. Browse to [http://localhost:4000](http://localhost:4000) to view the website.
 
+## Setup on APT based Distributions:
+`apt install jekyll ruby-dev build-essential npm` after installing these follow `Step 4`
+
 ## Dependencies
 
 This project relies on the dependencies as well. These dependencies are provided
