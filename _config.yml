@@ -36,6 +36,12 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-datapage-generator
+
+page_gen:
+  - data: 'members'
+    template: 'member'
+    name: 'name'
 
 # exclude these files from production site
 exclude: 
