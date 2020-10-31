@@ -100,11 +100,11 @@ cd contributors-index
 ```
 4. Perform the following commands to install dependencies and structure the website properly:
 ```
-chmod +x setup.sh && bash setup.sh
+./setup.sh
 ```
 5. Build the site and make it available on your local server
 ```
-$ bundle exec jekyll serve
+./run.sh
 ```
 6. Browse to [http://localhost:4000](http://localhost:4000) to view the website.
 

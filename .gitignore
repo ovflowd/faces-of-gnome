@@ -1,8 +1,16 @@
+# Jekyll Specific Generated Artifacts
 _site
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
+
+# Ruby Specific Artifacts
+.bundle
+
+# Node Specific Artifacts
 node_modules/
+
+# Generated Node Artifacts
 assets/@fortawesome/
 assets/@primer/
 assets/bootstrap/
@@ -11,6 +19,8 @@ assets/popper.js/
 assets/slick-carousel/
 assets/moment/
 assets/css/
+
+# Environment Specific Artifacts
 .vscode
 _data/api_fetch/
 .idea
