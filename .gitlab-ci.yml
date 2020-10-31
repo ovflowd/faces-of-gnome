@@ -4,7 +4,7 @@ variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
   GEM_PATH: .bundle
-  BUNDLER_PATH: ./bundle/bin
+  BUNDLER_PATH: .bundle/bin
 
 before_script:
   - apt-get update -y
