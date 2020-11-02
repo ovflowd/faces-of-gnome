@@ -6,7 +6,7 @@ BUNDLER_PATH=$GEM_PATH/bin
 echo -e "\n💡 \033[1;34minstalling node dependencies \033[0m\n"
 
 # install npm dependencies
-npm ci --silent
+npm ci ---cache .npm --prefer-offline --silent
 
 echo -e "\n💡 \033[1;34minstalling bundler locally \033[0m\n"
 
